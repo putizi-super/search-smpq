@@ -130,6 +130,14 @@ parser.add_argument(
     metavar='S',
     help='label smoothing')
 
+# parser.add_argument(
+#     '--baseline_model',
+#     type=str,
+#     default='./baseline/imagenet/resnet18.pth',
+#     # default='./baseline/imagenet/darknet19.pth',
+#     # default='./baseline/imagenet/regnet_y_400.pth',
+#     help='Path to the model wait for test. default:None'
+# )
 parser.add_argument(
     '--baseline_model',
     type=str,
