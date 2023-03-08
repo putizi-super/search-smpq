@@ -32,7 +32,7 @@ def layer_reconstruction(model: QuantModel, layer: QuantModule, pruning_rate: fl
         :param p: L_p norm minimization
     """
     # if not act_quant:
-    device = next(model.parameters()).device
+    device = next(model.parameters()).device        ## next(self.parameters()) 用于返回第一个参数  整句代码就是指定 使用和参数相同的设备
     model.set_quant_state(False, False)
     layer.set_quant_state(weight_quant, act_quant)
     round_mode = 'learned_hard_sigmoid'
@@ -90,30 +90,30 @@ def layer_reconstruction(model: QuantModel, layer: QuantModule, pruning_rate: fl
                              decay_start=0, warmup=warmup, p=p)
 
     # Save data before optimizing the rounding
-    cached_inps, cached_outs = save_inp_oup_data(model, layer, cali_data, asym, act_quant, batch_size)
-    if opt_mode != 'mse':
-        cached_grads = save_grad_data(model, layer, cali_data, act_quant, batch_size=batch_size)
-    else:
-        cached_grads = None
+    # cached_inps, cached_outs = save_inp_oup_data(model, layer, cali_data, asym, act_quant, batch_size)
+    # if opt_mode != 'mse':
+    #     cached_grads = save_grad_data(model, layer, cali_data, act_quant, batch_size=batch_size)
+    # else:
+    #     cached_grads = None
 
-    # device = 'cuda'
-    for i in range(iters):
-        idx = torch.randperm(cached_inps.size(0))[:batch_size]
-        cur_inp = cached_inps[idx]
-        cur_out = cached_outs[idx]
-        cur_grad = cached_grads[idx] if opt_mode != 'mse' else None
+    # # device = 'cuda'
+    # for i in range(iters):
+    #     idx = torch.randperm(cached_inps.size(0))[:batch_size]
+    #     cur_inp = cached_inps[idx]
+    #     cur_out = cached_outs[idx]
+    #     cur_grad = cached_grads[idx] if opt_mode != 'mse' else None
 
-        optimizer.zero_grad()
-        out_quant = layer(cur_inp)
+    #     optimizer.zero_grad()
+    #     out_quant = layer(cur_inp)
 
-        err = loss_func(out_quant, cur_out, cur_grad)
+    #     err = loss_func(out_quant, cur_out, cur_grad)
 
-        err.backward(retain_graph=True)
-        optimizer.step()
-        if scheduler:
-            scheduler.step()
+    #     err.backward(retain_graph=True)
+    #     optimizer.step()
+    #     if scheduler:
+    #         scheduler.step()
 
-    torch.cuda.empty_cache()
+    # torch.cuda.empty_cache()
 
     # Finish optimization, use hard rounding.
     layer.weight_quantizer.soft_targets = False

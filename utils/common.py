@@ -78,11 +78,16 @@ class checkpoint():
                 f.write('{}: {}\n'.format(arg, getattr(args, arg)))
             f.write('\n')
 
-    def save_model(self, state, epoch, is_best):
+    def save_model(self, state, is_best):
         save_path = f'{self.ckpt_dir}/model_checkpoint.pt'
         torch.save(state, save_path)
         if is_best:
             shutil.copyfile(save_path, f'{self.ckpt_dir}/model_best.pt')
+    # def save_model(self, state, epoch, is_best):
+    #     save_path = f'{self.ckpt_dir}/model_checkpoint.pt'
+    #     torch.save(state, save_path)
+    #     if is_best:
+    #         shutil.copyfile(save_path, f'{self.ckpt_dir}/model_best.pt')
 
 def get_logger(file_path):
     logger = logging.getLogger('gal')

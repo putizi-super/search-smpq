@@ -1,0 +1,998 @@
+            (weight_quantizer): RistrettoQuantizer(bit=4, scale_method=mse, symmetric=False, channel_wise=False, leaf_param=True)
+            (bias_quantizer): RistrettoQuantizer(bit=4, scale_method=mse, symmetric=False, channel_wise=False, leaf_param=True)
+            (in_act_quantizer): RistrettoQuantizer(bit=8, scale_method=mse, symmetric=False, channel_wise=False, leaf_param=False)
+            (out_act_quantizer): RistrettoQuantizer(bit=8, scale_method=mse, symmetric=False, channel_wise=False, leaf_param=False)
+            (activation_function): LeakyReLU(negative_slope=0.1, inplace=True)
+          )
+          (1): StraightThrough()
+          (2): StraightThrough()
+        )
+      )
+      (1): Conv_BN_LeakyReLU(
+        (convs): Sequential(
+          (0): QuantModule(
+            (weight_quantizer): RistrettoQuantizer(bit=4, scale_method=mse, symmetric=False, channel_wise=False, leaf_param=True)
+            (bias_quantizer): RistrettoQuantizer(bit=4, scale_method=mse, symmetric=False, channel_wise=False, leaf_param=True)
+            (in_act_quantizer): RistrettoQuantizer(bit=8, scale_method=mse, symmetric=False, channel_wise=False, leaf_param=False)
+            (out_act_quantizer): RistrettoQuantizer(bit=8, scale_method=mse, symmetric=False, channel_wise=False, leaf_param=False)
+            (activation_function): LeakyReLU(negative_slope=0.1, inplace=True)
+          )
+          (1): StraightThrough()
+          (2): StraightThrough()
+        )
+      )
+      (2): Conv_BN_LeakyReLU(
+        (convs): Sequential(
+          (0): QuantModule(
+            (weight_quantizer): RistrettoQuantizer(bit=4, scale_method=mse, symmetric=False, channel_wise=False, leaf_param=True)
+            (bias_quantizer): RistrettoQuantizer(bit=4, scale_method=mse, symmetric=False, channel_wise=False, leaf_param=True)
+            (in_act_quantizer): RistrettoQuantizer(bit=8, scale_method=mse, symmetric=False, channel_wise=False, leaf_param=False)
+            (out_act_quantizer): RistrettoQuantizer(bit=8, scale_method=mse, symmetric=False, channel_wise=False, leaf_param=False)
+            (activation_function): LeakyReLU(negative_slope=0.1, inplace=True)
+          )
+          (1): StraightThrough()
+          (2): StraightThrough()
+        )
+      )
+      (3): Conv_BN_LeakyReLU(
+        (convs): Sequential(
+          (0): QuantModule(
+            (weight_quantizer): RistrettoQuantizer(bit=4, scale_method=mse, symmetric=False, channel_wise=False, leaf_param=True)
+            (bias_quantizer): RistrettoQuantizer(bit=4, scale_method=mse, symmetric=False, channel_wise=False, leaf_param=True)
+            (in_act_quantizer): RistrettoQuantizer(bit=8, scale_method=mse, symmetric=False, channel_wise=False, leaf_param=False)
+            (out_act_quantizer): RistrettoQuantizer(bit=8, scale_method=mse, symmetric=False, channel_wise=False, leaf_param=False)
+            (activation_function): LeakyReLU(negative_slope=0.1, inplace=True)
+          )
+          (1): StraightThrough()
+          (2): StraightThrough()
+        )
+      )
+      (4): Conv_BN_LeakyReLU(
+        (convs): Sequential(
+          (0): QuantModule(
+            (weight_quantizer): RistrettoQuantizer(bit=4, scale_method=mse, symmetric=False, channel_wise=False, leaf_param=True)
+            (bias_quantizer): RistrettoQuantizer(bit=4, scale_method=mse, symmetric=False, channel_wise=False, leaf_param=True)
+            (in_act_quantizer): RistrettoQuantizer(bit=8, scale_method=mse, symmetric=False, channel_wise=False, leaf_param=False)
+            (out_act_quantizer): RistrettoQuantizer(bit=8, scale_method=mse, symmetric=False, channel_wise=False, leaf_param=False)
+            (activation_function): LeakyReLU(negative_slope=0.1, inplace=True)
+          )
+          (1): StraightThrough()
+          (2): StraightThrough()
+        )
+      )
+    )
+    (maxpool_5): MaxPool2d(kernel_size=(2, 2), stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv_6): Sequential(
+      (0): Conv_BN_LeakyReLU(
+        (convs): Sequential(
+          (0): QuantModule(
+            (weight_quantizer): RistrettoQuantizer(bit=4, scale_method=mse, symmetric=False, channel_wise=False, leaf_param=True)
+            (bias_quantizer): RistrettoQuantizer(bit=4, scale_method=mse, symmetric=False, channel_wise=False, leaf_param=True)
+            (in_act_quantizer): RistrettoQuantizer(bit=8, scale_method=mse, symmetric=False, channel_wise=False, leaf_param=False)
+            (out_act_quantizer): RistrettoQuantizer(bit=8, scale_method=mse, symmetric=False, channel_wise=False, leaf_param=False)
+            (activation_function): LeakyReLU(negative_slope=0.1, inplace=True)
+          )
+          (1): StraightThrough()
+          (2): StraightThrough()
+        )
+      )
+      (1): Conv_BN_LeakyReLU(
+        (convs): Sequential(
+          (0): QuantModule(
+            (weight_quantizer): RistrettoQuantizer(bit=4, scale_method=mse, symmetric=False, channel_wise=False, leaf_param=True)
+            (bias_quantizer): RistrettoQuantizer(bit=4, scale_method=mse, symmetric=False, channel_wise=False, leaf_param=True)
+            (in_act_quantizer): RistrettoQuantizer(bit=8, scale_method=mse, symmetric=False, channel_wise=False, leaf_param=False)
+            (out_act_quantizer): RistrettoQuantizer(bit=8, scale_method=mse, symmetric=False, channel_wise=False, leaf_param=False)
+            (activation_function): LeakyReLU(negative_slope=0.1, inplace=True)
+          )
+          (1): StraightThrough()
+          (2): StraightThrough()
+        )
+      )
+      (2): Conv_BN_LeakyReLU(
+        (convs): Sequential(
+          (0): QuantModule(
+            (weight_quantizer): RistrettoQuantizer(bit=4, scale_method=mse, symmetric=False, channel_wise=False, leaf_param=True)
+            (bias_quantizer): RistrettoQuantizer(bit=4, scale_method=mse, symmetric=False, channel_wise=False, leaf_param=True)
+            (in_act_quantizer): RistrettoQuantizer(bit=8, scale_method=mse, symmetric=False, channel_wise=False, leaf_param=False)
+            (out_act_quantizer): RistrettoQuantizer(bit=8, scale_method=mse, symmetric=False, channel_wise=False, leaf_param=False)
+            (activation_function): LeakyReLU(negative_slope=0.1, inplace=True)
+          )
+          (1): StraightThrough()
+          (2): StraightThrough()
+        )
+      )
+      (3): Conv_BN_LeakyReLU(
+        (convs): Sequential(
+          (0): QuantModule(
+            (weight_quantizer): RistrettoQuantizer(bit=4, scale_method=mse, symmetric=False, channel_wise=False, leaf_param=True)
+            (bias_quantizer): RistrettoQuantizer(bit=4, scale_method=mse, symmetric=False, channel_wise=False, leaf_param=True)
+            (in_act_quantizer): RistrettoQuantizer(bit=8, scale_method=mse, symmetric=False, channel_wise=False, leaf_param=False)
+            (out_act_quantizer): RistrettoQuantizer(bit=8, scale_method=mse, symmetric=False, channel_wise=False, leaf_param=False)
+            (activation_function): LeakyReLU(negative_slope=0.1, inplace=True)
+          )
+          (1): StraightThrough()
+          (2): StraightThrough()
+        )
+      )
+      (4): Conv_BN_LeakyReLU(
+        (convs): Sequential(
+          (0): QuantModule(
+            (weight_quantizer): RistrettoQuantizer(bit=4, scale_method=mse, symmetric=False, channel_wise=False, leaf_param=True)
+            (bias_quantizer): RistrettoQuantizer(bit=4, scale_method=mse, symmetric=False, channel_wise=False, leaf_param=True)
+            (in_act_quantizer): RistrettoQuantizer(bit=8, scale_method=mse, symmetric=False, channel_wise=False, leaf_param=False)
+            (out_act_quantizer): RistrettoQuantizer(bit=8, scale_method=mse, symmetric=False, channel_wise=False, leaf_param=False)
+            (activation_function): LeakyReLU(negative_slope=0.1, inplace=True)
+          )
+          (1): StraightThrough()
+          (2): StraightThrough()
+        )
+      )
+    )
+    (conv_7): QuantModule(
+      (weight_quantizer): RistrettoQuantizer(bit=4, scale_method=mse, symmetric=False, channel_wise=False, leaf_param=True)
+      (bias_quantizer): RistrettoQuantizer(bit=4, scale_method=mse, symmetric=False, channel_wise=False, leaf_param=True)
+      (in_act_quantizer): RistrettoQuantizer(bit=8, scale_method=mse, symmetric=False, channel_wise=False, leaf_param=False)
+      (out_act_quantizer): RistrettoQuantizer(bit=8, scale_method=mse, symmetric=False, channel_wise=False, leaf_param=False)
+      (activation_function): StraightThrough()
+    )
+    (avgpool): AdaptiveAvgPool2d(output_size=(1, 1))
+  )
+)
+Reconstruction for layer 0
+Init alpha to be FP32
+Parameter containing:
+tensor(10.5200, device='cuda:0', requires_grad=True)
+Total loss:     4.469 (rec:4.469, round:0.000)  b=0.00  count=500       p=2.0
+Total loss:     3.939 (rec:3.939, round:0.000)  b=0.00  count=1000      p=2.0
+Total loss:     3.413 (rec:3.413, round:0.000)  b=0.00  count=1500      p=2.0
+Total loss:     2.788 (rec:2.788, round:0.000)  b=0.00  count=2000      p=2.0
+Total loss:     2.945 (rec:2.945, round:0.000)  b=0.00  count=2500      p=2.0
+Total loss:     2.881 (rec:2.881, round:0.000)  b=0.00  count=3000      p=2.0
+Total loss:     2.694 (rec:2.694, round:0.000)  b=0.00  count=3500      p=2.0
+Total loss:     10.597 (rec:2.613, round:7.983) b=26.00 count=4000      p=2.0
+Total loss:     9.900 (rec:2.704, round:7.196)  b=25.25 count=4500      p=2.0
+Total loss:     9.684 (rec:2.738, round:6.946)  b=24.50 count=5000      p=2.0
+Total loss:     9.472 (rec:2.678, round:6.793)  b=23.75 count=5500      p=2.0
+Total loss:     9.265 (rec:2.628, round:6.637)  b=23.00 count=6000      p=2.0
+Total loss:     8.968 (rec:2.497, round:6.471)  b=22.25 count=6500      p=2.0
+Total loss:     8.870 (rec:2.522, round:6.348)  b=21.50 count=7000      p=2.0
+Total loss:     9.119 (rec:2.887, round:6.231)  b=20.75 count=7500      p=2.0
+Total loss:     8.749 (rec:2.597, round:6.152)  b=20.00 count=8000      p=2.0
+Total loss:     8.645 (rec:2.592, round:6.053)  b=19.25 count=8500      p=2.0
+Total loss:     8.448 (rec:2.446, round:6.002)  b=18.50 count=9000      p=2.0
+Total loss:     8.549 (rec:2.603, round:5.946)  b=17.75 count=9500      p=2.0
+Total loss:     8.400 (rec:2.519, round:5.881)  b=17.00 count=10000     p=2.0
+Total loss:     8.257 (rec:2.474, round:5.783)  b=16.25 count=10500     p=2.0
+Total loss:     8.196 (rec:2.559, round:5.637)  b=15.50 count=11000     p=2.0
+Total loss:     7.858 (rec:2.360, round:5.498)  b=14.75 count=11500     p=2.0
+Total loss:     7.935 (rec:2.556, round:5.380)  b=14.00 count=12000     p=2.0
+Total loss:     7.860 (rec:2.578, round:5.282)  b=13.25 count=12500     p=2.0
+Total loss:     7.885 (rec:2.681, round:5.204)  b=12.50 count=13000     p=2.0
+Total loss:     7.444 (rec:2.358, round:5.086)  b=11.75 count=13500     p=2.0
+Total loss:     7.760 (rec:2.768, round:4.992)  b=11.00 count=14000     p=2.0
+Total loss:     7.434 (rec:2.572, round:4.862)  b=10.25 count=14500     p=2.0
+Total loss:     7.146 (rec:2.402, round:4.744)  b=9.50  count=15000     p=2.0
+Total loss:     7.174 (rec:2.544, round:4.630)  b=8.75  count=15500     p=2.0
+Total loss:     7.140 (rec:2.662, round:4.478)  b=8.00  count=16000     p=2.0
+Total loss:     6.767 (rec:2.426, round:4.340)  b=7.25  count=16500     p=2.0
+Total loss:     6.533 (rec:2.312, round:4.221)  b=6.50  count=17000     p=2.0
+Total loss:     6.586 (rec:2.544, round:4.042)  b=5.75  count=17500     p=2.0
+Total loss:     6.268 (rec:2.410, round:3.859)  b=5.00  count=18000     p=2.0
+Total loss:     6.186 (rec:2.532, round:3.654)  b=4.25  count=18500     p=2.0
+Total loss:     5.960 (rec:2.596, round:3.364)  b=3.50  count=19000     p=2.0
+Total loss:     5.355 (rec:2.332, round:3.023)  b=2.75  count=19500     p=2.0
+Total loss:     5.147 (rec:2.630, round:2.517)  b=2.00  count=20000     p=2.0
+Reconstruction for layer 0
+Init alpha to be FP32
+Parameter containing:
+tensor(0.7058, device='cuda:0', requires_grad=True)
+Total loss:     15.541 (rec:15.541, round:0.000)        b=0.00  count=500       p=2.0
+Total loss:     13.604 (rec:13.604, round:0.000)        b=0.00  count=1000      p=2.0
+Total loss:     10.833 (rec:10.833, round:0.000)        b=0.00  count=1500      p=2.0
+Total loss:     11.554 (rec:11.554, round:0.000)        b=0.00  count=2000      p=2.0
+Total loss:     9.806 (rec:9.806, round:0.000)  b=0.00  count=2500      p=2.0
+Total loss:     7.187 (rec:7.187, round:0.000)  b=0.00  count=3000      p=2.0
+Total loss:     9.101 (rec:9.101, round:0.000)  b=0.00  count=3500      p=2.0
+Total loss:     170.042 (rec:8.093, round:161.948)      b=26.00 count=4000      p=2.0
+Total loss:     137.972 (rec:7.167, round:130.804)      b=25.25 count=4500      p=2.0
+Total loss:     132.085 (rec:7.351, round:124.733)      b=24.50 count=5000      p=2.0
+Total loss:     128.519 (rec:8.126, round:120.392)      b=23.75 count=5500      p=2.0
+Total loss:     124.248 (rec:7.326, round:116.922)      b=23.00 count=6000      p=2.0
+Total loss:     119.640 (rec:5.688, round:113.952)      b=22.25 count=6500      p=2.0
+Total loss:     118.171 (rec:7.238, round:110.933)      b=21.50 count=7000      p=2.0
+Total loss:     114.523 (rec:6.170, round:108.353)      b=20.75 count=7500      p=2.0
+Total loss:     111.468 (rec:5.685, round:105.784)      b=20.00 count=8000      p=2.0
+Total loss:     108.887 (rec:5.578, round:103.309)      b=19.25 count=8500      p=2.0
+Total loss:     106.376 (rec:5.165, round:101.212)      b=18.50 count=9000      p=2.0
+Total loss:     104.788 (rec:5.727, round:99.061)       b=17.75 count=9500      p=2.0
+Total loss:     102.588 (rec:5.720, round:96.868)       b=17.00 count=10000     p=2.0
+Total loss:     100.358 (rec:5.614, round:94.744)       b=16.25 count=10500     p=2.0
+Total loss:     97.662 (rec:5.236, round:92.425)        b=15.50 count=11000     p=2.0
+Total loss:     95.722 (rec:5.633, round:90.089)        b=14.75 count=11500     p=2.0
+Total loss:     94.299 (rec:6.407, round:87.892)        b=14.00 count=12000     p=2.0
+Total loss:     91.368 (rec:5.937, round:85.432)        b=13.25 count=12500     p=2.0
+Total loss:     89.116 (rec:6.000, round:83.116)        b=12.50 count=13000     p=2.0
+Total loss:     86.610 (rec:6.162, round:80.447)        b=11.75 count=13500     p=2.0
+Total loss:     85.053 (rec:7.172, round:77.881)        b=11.00 count=14000     p=2.0
+Total loss:     82.541 (rec:7.583, round:74.958)        b=10.25 count=14500     p=2.0
+Total loss:     77.860 (rec:5.945, round:71.915)        b=9.50  count=15000     p=2.0
+Total loss:     75.064 (rec:6.337, round:68.727)        b=8.75  count=15500     p=2.0
+Total loss:     72.934 (rec:7.597, round:65.337)        b=8.00  count=16000     p=2.0
+Total loss:     66.637 (rec:5.194, round:61.443)        b=7.25  count=16500     p=2.0
+Total loss:     62.635 (rec:5.270, round:57.366)        b=6.50  count=17000     p=2.0
+Total loss:     59.074 (rec:6.260, round:52.814)        b=5.75  count=17500     p=2.0
+Total loss:     53.226 (rec:5.635, round:47.591)        b=5.00  count=18000     p=2.0
+Total loss:     48.128 (rec:6.470, round:41.658)        b=4.25  count=18500     p=2.0
+Total loss:     41.487 (rec:6.349, round:35.138)        b=3.50  count=19000     p=2.0
+Total loss:     34.526 (rec:7.255, round:27.272)        b=2.75  count=19500     p=2.0
+Total loss:     25.918 (rec:7.313, round:18.605)        b=2.00  count=20000     p=2.0
+Reconstruction for layer 0
+Init alpha to be FP32
+Parameter containing:
+tensor(0.3534, device='cuda:0', requires_grad=True)
+Total loss:     8.541 (rec:8.541, round:0.000)  b=0.00  count=500       p=2.0
+Total loss:     7.298 (rec:7.298, round:0.000)  b=0.00  count=1000      p=2.0
+Total loss:     6.898 (rec:6.898, round:0.000)  b=0.00  count=1500      p=2.0
+Total loss:     7.163 (rec:7.163, round:0.000)  b=0.00  count=2000      p=2.0
+Total loss:     6.338 (rec:6.338, round:0.000)  b=0.00  count=2500      p=2.0
+Total loss:     5.889 (rec:5.889, round:0.000)  b=0.00  count=3000      p=2.0
+Total loss:     6.332 (rec:6.332, round:0.000)  b=0.00  count=3500      p=2.0
+Total loss:     696.123 (rec:9.006, round:687.117)      b=26.00 count=4000      p=2.0
+Total loss:     540.638 (rec:7.796, round:532.842)      b=25.25 count=4500      p=2.0
+Total loss:     515.694 (rec:5.723, round:509.972)      b=24.50 count=5000      p=2.0
+Total loss:     501.217 (rec:5.745, round:495.472)      b=23.75 count=5500      p=2.0
+Total loss:     491.883 (rec:7.711, round:484.172)      b=23.00 count=6000      p=2.0
+Total loss:     481.220 (rec:6.730, round:474.491)      b=22.25 count=6500      p=2.0
+Total loss:     472.043 (rec:6.744, round:465.299)      b=21.50 count=7000      p=2.0
+Total loss:     465.452 (rec:8.501, round:456.950)      b=20.75 count=7500      p=2.0
+Total loss:     455.183 (rec:6.430, round:448.753)      b=20.00 count=8000      p=2.0
+Total loss:     448.369 (rec:7.604, round:440.765)      b=19.25 count=8500      p=2.0
+Total loss:     440.246 (rec:7.448, round:432.798)      b=18.50 count=9000      p=2.0
+Total loss:     430.771 (rec:6.156, round:424.615)      b=17.75 count=9500      p=2.0
+Total loss:     423.501 (rec:7.254, round:416.247)      b=17.00 count=10000     p=2.0
+Total loss:     412.944 (rec:5.482, round:407.462)      b=16.25 count=10500     p=2.0
+Total loss:     406.154 (rec:7.824, round:398.330)      b=15.50 count=11000     p=2.0
+Total loss:     396.436 (rec:7.787, round:388.648)      b=14.75 count=11500     p=2.0
+Total loss:     385.665 (rec:7.331, round:378.334)      b=14.00 count=12000     p=2.0
+Total loss:     373.859 (rec:6.331, round:367.528)      b=13.25 count=12500     p=2.0
+Total loss:     365.013 (rec:8.685, round:356.328)      b=12.50 count=13000     p=2.0
+Total loss:     352.989 (rec:8.736, round:344.253)      b=11.75 count=13500     p=2.0
+Total loss:     339.934 (rec:8.397, round:331.537)      b=11.00 count=14000     p=2.0
+Total loss:     324.421 (rec:6.837, round:317.584)      b=10.25 count=14500     p=2.0
+Total loss:     310.199 (rec:7.735, round:302.464)      b=9.50  count=15000     p=2.0
+Total loss:     294.437 (rec:8.773, round:285.664)      b=8.75  count=15500     p=2.0
+Total loss:     274.842 (rec:7.728, round:267.114)      b=8.00  count=16000     p=2.0
+Total loss:     256.507 (rec:9.574, round:246.933)      b=7.25  count=16500     p=2.0
+Total loss:     232.940 (rec:8.225, round:224.714)      b=6.50  count=17000     p=2.0
+Total loss:     206.890 (rec:7.740, round:199.150)      b=5.75  count=17500     p=2.0
+Total loss:     178.524 (rec:8.543, round:169.982)      b=5.00  count=18000     p=2.0
+Total loss:     146.781 (rec:9.364, round:137.417)      b=4.25  count=18500     p=2.0
+Total loss:     114.292 (rec:12.038, round:102.254)     b=3.50  count=19000     p=2.0
+Total loss:     85.484 (rec:17.957, round:67.527)       b=2.75  count=19500     p=2.0
+Total loss:     50.466 (rec:12.843, round:37.623)       b=2.00  count=20000     p=2.0
+Reconstruction for layer 0
+Init alpha to be FP32
+Parameter containing:
+tensor(1.4118, device='cuda:0', requires_grad=True)
+Total loss:     70.742 (rec:70.742, round:0.000)        b=0.00  count=500       p=2.0
+Total loss:     68.143 (rec:68.143, round:0.000)        b=0.00  count=1000      p=2.0
+Total loss:     66.838 (rec:66.838, round:0.000)        b=0.00  count=1500      p=2.0
+Total loss:     51.769 (rec:51.769, round:0.000)        b=0.00  count=2000      p=2.0
+Total loss:     53.463 (rec:53.463, round:0.000)        b=0.00  count=2500      p=2.0
+Total loss:     57.244 (rec:57.244, round:0.000)        b=0.00  count=3000      p=2.0
+Total loss:     44.865 (rec:44.865, round:0.000)        b=0.00  count=3500      p=2.0
+Total loss:     124.565 (rec:53.877, round:70.688)      b=26.00 count=4000      p=2.0
+Total loss:     115.001 (rec:53.503, round:61.498)      b=25.25 count=4500      p=2.0
+Total loss:     102.834 (rec:43.824, round:59.010)      b=24.50 count=5000      p=2.0
+Total loss:     103.328 (rec:46.396, round:56.933)      b=23.75 count=5500      p=2.0
+Total loss:     103.933 (rec:48.547, round:55.386)      b=23.00 count=6000      p=2.0
+Total loss:     91.183 (rec:37.270, round:53.913)       b=22.25 count=6500      p=2.0
+Total loss:     98.041 (rec:45.601, round:52.440)       b=21.50 count=7000      p=2.0
+Total loss:     96.386 (rec:45.185, round:51.201)       b=20.75 count=7500      p=2.0
+Total loss:     82.997 (rec:33.132, round:49.865)       b=20.00 count=8000      p=2.0
+Total loss:     87.342 (rec:38.749, round:48.593)       b=19.25 count=8500      p=2.0
+Total loss:     89.915 (rec:42.413, round:47.502)       b=18.50 count=9000      p=2.0
+Total loss:     91.133 (rec:44.562, round:46.571)       b=17.75 count=9500      p=2.0
+Total loss:     92.292 (rec:46.682, round:45.610)       b=17.00 count=10000     p=2.0
+Total loss:     87.531 (rec:42.748, round:44.782)       b=16.25 count=10500     p=2.0
+Total loss:     91.987 (rec:47.987, round:43.999)       b=15.50 count=11000     p=2.0
+Total loss:     90.305 (rec:47.289, round:43.016)       b=14.75 count=11500     p=2.0
+Total loss:     87.318 (rec:45.042, round:42.276)       b=14.00 count=12000     p=2.0
+Total loss:     95.041 (rec:53.613, round:41.427)       b=13.25 count=12500     p=2.0
+Total loss:     83.802 (rec:43.283, round:40.518)       b=12.50 count=13000     p=2.0
+Total loss:     73.366 (rec:33.814, round:39.552)       b=11.75 count=13500     p=2.0
+Total loss:     82.617 (rec:44.049, round:38.568)       b=11.00 count=14000     p=2.0
+Total loss:     81.296 (rec:43.725, round:37.571)       b=10.25 count=14500     p=2.0
+Total loss:     74.931 (rec:38.340, round:36.591)       b=9.50  count=15000     p=2.0
+Total loss:     78.442 (rec:42.991, round:35.451)       b=8.75  count=15500     p=2.0
+Total loss:     81.844 (rec:47.773, round:34.071)       b=8.00  count=16000     p=2.0
+Total loss:     85.781 (rec:53.121, round:32.660)       b=7.25  count=16500     p=2.0
+Total loss:     70.097 (rec:39.051, round:31.046)       b=6.50  count=17000     p=2.0
+Total loss:     70.631 (rec:41.219, round:29.412)       b=5.75  count=17500     p=2.0
+Total loss:     73.088 (rec:45.530, round:27.557)       b=5.00  count=18000     p=2.0
+Total loss:     67.868 (rec:42.447, round:25.422)       b=4.25  count=18500     p=2.0
+Total loss:     78.453 (rec:55.555, round:22.898)       b=3.50  count=19000     p=2.0
+Total loss:     62.482 (rec:42.674, round:19.808)       b=2.75  count=19500     p=2.0
+Total loss:     59.618 (rec:43.749, round:15.868)       b=2.00  count=20000     p=2.0
+Reconstruction for layer 0
+Init alpha to be FP32
+Parameter containing:
+tensor(0.3525, device='cuda:0', requires_grad=True)
+Total loss:     34.989 (rec:34.989, round:0.000)        b=0.00  count=500       p=2.0
+Total loss:     30.910 (rec:30.910, round:0.000)        b=0.00  count=1000      p=2.0
+Total loss:     24.744 (rec:24.744, round:0.000)        b=0.00  count=1500      p=2.0
+Total loss:     21.306 (rec:21.306, round:0.000)        b=0.00  count=2000      p=2.0
+Total loss:     26.533 (rec:26.533, round:0.000)        b=0.00  count=2500      p=2.0
+Total loss:     19.213 (rec:19.213, round:0.000)        b=0.00  count=3000      p=2.0
+Total loss:     17.641 (rec:17.641, round:0.000)        b=0.00  count=3500      p=2.0
+Total loss:     684.227 (rec:19.838, round:664.390)     b=26.00 count=4000      p=2.0
+Total loss:     541.003 (rec:19.285, round:521.718)     b=25.25 count=4500      p=2.0
+Total loss:     518.736 (rec:21.100, round:497.636)     b=24.50 count=5000      p=2.0
+Total loss:     501.313 (rec:19.415, round:481.898)     b=23.75 count=5500      p=2.0
+Total loss:     485.904 (rec:17.757, round:468.146)     b=23.00 count=6000      p=2.0
+Total loss:     471.767 (rec:15.717, round:456.050)     b=22.25 count=6500      p=2.0
+Total loss:     459.721 (rec:15.275, round:444.446)     b=21.50 count=7000      p=2.0
+Total loss:     450.580 (rec:16.973, round:433.607)     b=20.75 count=7500      p=2.0
+Total loss:     442.882 (rec:19.864, round:423.018)     b=20.00 count=8000      p=2.0
+Total loss:     429.957 (rec:16.919, round:413.037)     b=19.25 count=8500      p=2.0
+Total loss:     419.313 (rec:16.616, round:402.697)     b=18.50 count=9000      p=2.0
+Total loss:     410.417 (rec:17.633, round:392.783)     b=17.75 count=9500      p=2.0
+Total loss:     400.755 (rec:17.565, round:383.189)     b=17.00 count=10000     p=2.0
+Total loss:     392.673 (rec:18.995, round:373.678)     b=16.25 count=10500     p=2.0
+Total loss:     384.461 (rec:20.503, round:363.958)     b=15.50 count=11000     p=2.0
+Total loss:     371.821 (rec:18.178, round:353.643)     b=14.75 count=11500     p=2.0
+Total loss:     366.224 (rec:22.703, round:343.521)     b=14.00 count=12000     p=2.0
+Total loss:     348.549 (rec:15.971, round:332.578)     b=13.25 count=12500     p=2.0
+Total loss:     336.577 (rec:15.585, round:320.993)     b=12.50 count=13000     p=2.0
+Total loss:     328.407 (rec:18.832, round:309.576)     b=11.75 count=13500     p=2.0
+Total loss:     313.449 (rec:15.918, round:297.531)     b=11.00 count=14000     p=2.0
+Total loss:     302.338 (rec:17.702, round:284.636)     b=10.25 count=14500     p=2.0
+Total loss:     289.445 (rec:19.365, round:270.080)     b=9.50  count=15000     p=2.0
+Total loss:     271.286 (rec:17.193, round:254.093)     b=8.75  count=15500     p=2.0
+Total loss:     256.028 (rec:18.433, round:237.595)     b=8.00  count=16000     p=2.0
+Total loss:     233.380 (rec:13.718, round:219.663)     b=7.25  count=16500     p=2.0
+Total loss:     215.937 (rec:15.906, round:200.030)     b=6.50  count=17000     p=2.0
+Total loss:     195.444 (rec:18.021, round:177.423)     b=5.75  count=17500     p=2.0
+Total loss:     174.153 (rec:22.107, round:152.045)     b=5.00  count=18000     p=2.0
+Total loss:     143.895 (rec:20.907, round:122.988)     b=4.25  count=18500     p=2.0
+Total loss:     111.500 (rec:20.906, round:90.593)      b=3.50  count=19000     p=2.0
+Total loss:     76.668 (rec:18.834, round:57.834)       b=2.75  count=19500     p=2.0
+Total loss:     53.193 (rec:22.300, round:30.893)       b=2.00  count=20000     p=2.0
+Reconstruction for layer 0
+Init alpha to be FP32
+Parameter containing:
+tensor(0.1759, device='cuda:0', requires_grad=True)
+Total loss:     23.046 (rec:23.046, round:0.000)        b=0.00  count=500       p=2.0
+Total loss:     29.587 (rec:29.587, round:0.000)        b=0.00  count=1000      p=2.0
+Total loss:     24.164 (rec:24.164, round:0.000)        b=0.00  count=1500      p=2.0
+Total loss:     19.005 (rec:19.005, round:0.000)        b=0.00  count=2000      p=2.0
+Total loss:     24.661 (rec:24.661, round:0.000)        b=0.00  count=2500      p=2.0
+Total loss:     19.495 (rec:19.495, round:0.000)        b=0.00  count=3000      p=2.0
+Total loss:     15.772 (rec:15.772, round:0.000)        b=0.00  count=3500      p=2.0
+Total loss:     2733.438 (rec:18.447, round:2714.990)   b=26.00 count=4000      p=2.0
+Total loss:     2038.698 (rec:19.589, round:2019.109)   b=25.25 count=4500      p=2.0
+Total loss:     1955.870 (rec:27.973, round:1927.897)   b=24.50 count=5000      p=2.0
+Total loss:     1886.023 (rec:17.672, round:1868.351)   b=23.75 count=5500      p=2.0
+Total loss:     1838.601 (rec:18.860, round:1819.741)   b=23.00 count=6000      p=2.0
+Total loss:     1801.943 (rec:26.447, round:1775.496)   b=22.25 count=6500      p=2.0
+Total loss:     1759.677 (rec:23.843, round:1735.834)   b=21.50 count=7000      p=2.0
+Total loss:     1718.557 (rec:21.721, round:1696.835)   b=20.75 count=7500      p=2.0
+Total loss:     1675.855 (rec:16.694, round:1659.161)   b=20.00 count=8000      p=2.0
+Total loss:     1643.587 (rec:20.902, round:1622.685)   b=19.25 count=8500      p=2.0
+Total loss:     1605.087 (rec:19.258, round:1585.829)   b=18.50 count=9000      p=2.0
+Total loss:     1574.874 (rec:27.047, round:1547.827)   b=17.75 count=9500      p=2.0
+Total loss:     1525.912 (rec:16.261, round:1509.651)   b=17.00 count=10000     p=2.0
+Total loss:     1489.909 (rec:18.547, round:1471.362)   b=16.25 count=10500     p=2.0
+Total loss:     1453.551 (rec:22.058, round:1431.493)   b=15.50 count=11000     p=2.0
+Total loss:     1408.528 (rec:19.791, round:1388.737)   b=14.75 count=11500     p=2.0
+Total loss:     1362.472 (rec:17.401, round:1345.071)   b=14.00 count=12000     p=2.0
+Total loss:     1321.704 (rec:23.739, round:1297.965)   b=13.25 count=12500     p=2.0
+Total loss:     1271.386 (rec:23.593, round:1247.793)   b=12.50 count=13000     p=2.0
+Total loss:     1218.934 (rec:23.711, round:1195.223)   b=11.75 count=13500     p=2.0
+Total loss:     1163.032 (rec:23.186, round:1139.845)   b=11.00 count=14000     p=2.0
+Total loss:     1102.540 (rec:23.217, round:1079.323)   b=10.25 count=14500     p=2.0
+Total loss:     1037.712 (rec:23.184, round:1014.527)   b=9.50  count=15000     p=2.0
+Total loss:     967.032 (rec:22.349, round:944.682)     b=8.75  count=15500     p=2.0
+Total loss:     896.101 (rec:26.501, round:869.600)     b=8.00  count=16000     p=2.0
+Total loss:     804.055 (rec:18.799, round:785.256)     b=7.25  count=16500     p=2.0
+Total loss:     718.038 (rec:25.113, round:692.925)     b=6.50  count=17000     p=2.0
+Total loss:     610.498 (rec:20.047, round:590.451)     b=5.75  count=17500     p=2.0
+Total loss:     502.501 (rec:26.405, round:476.096)     b=5.00  count=18000     p=2.0
+Total loss:     375.038 (rec:25.206, round:349.832)     b=4.25  count=18500     p=2.0
+Total loss:     238.497 (rec:19.255, round:219.242)     b=3.50  count=19000     p=2.0
+Total loss:     131.277 (rec:28.838, round:102.439)     b=2.75  count=19500     p=2.0
+Total loss:     54.232 (rec:23.106, round:31.126)       b=2.00  count=20000     p=2.0
+Reconstruction for layer 0
+Init alpha to be FP32
+Parameter containing:
+tensor(1.4129, device='cuda:0', requires_grad=True)
+Total loss:     34.023 (rec:34.023, round:0.000)        b=0.00  count=500       p=2.0
+Total loss:     32.897 (rec:32.897, round:0.000)        b=0.00  count=1000      p=2.0
+Total loss:     29.451 (rec:29.451, round:0.000)        b=0.00  count=1500      p=2.0
+Total loss:     31.435 (rec:31.435, round:0.000)        b=0.00  count=2000      p=2.0
+Total loss:     28.547 (rec:28.547, round:0.000)        b=0.00  count=2500      p=2.0
+Total loss:     26.676 (rec:26.676, round:0.000)        b=0.00  count=3000      p=2.0
+Total loss:     28.296 (rec:28.296, round:0.000)        b=0.00  count=3500      p=2.0
+Total loss:     333.048 (rec:32.206, round:300.842)     b=26.00 count=4000      p=2.0
+Total loss:     275.517 (rec:28.778, round:246.739)     b=25.25 count=4500      p=2.0
+Total loss:     269.277 (rec:31.310, round:237.967)     b=24.50 count=5000      p=2.0
+Total loss:     259.437 (rec:27.409, round:232.027)     b=23.75 count=5500      p=2.0
+Total loss:     254.172 (rec:26.458, round:227.714)     b=23.00 count=6000      p=2.0
+Total loss:     261.921 (rec:38.473, round:223.449)     b=22.25 count=6500      p=2.0
+Total loss:     246.973 (rec:27.393, round:219.580)     b=21.50 count=7000      p=2.0
+Total loss:     249.577 (rec:33.299, round:216.278)     b=20.75 count=7500      p=2.0
+Total loss:     247.421 (rec:34.418, round:213.003)     b=20.00 count=8000      p=2.0
+Total loss:     241.704 (rec:31.937, round:209.767)     b=19.25 count=8500      p=2.0
+Total loss:     237.900 (rec:31.230, round:206.670)     b=18.50 count=9000      p=2.0
+Total loss:     229.362 (rec:26.044, round:203.318)     b=17.75 count=9500      p=2.0
+Total loss:     231.819 (rec:31.974, round:199.844)     b=17.00 count=10000     p=2.0
+Total loss:     228.825 (rec:32.006, round:196.819)     b=16.25 count=10500     p=2.0
+Total loss:     221.077 (rec:27.610, round:193.467)     b=15.50 count=11000     p=2.0
+Total loss:     222.494 (rec:33.066, round:189.429)     b=14.75 count=11500     p=2.0
+Total loss:     213.554 (rec:28.121, round:185.432)     b=14.00 count=12000     p=2.0
+Total loss:     209.262 (rec:28.288, round:180.975)     b=13.25 count=12500     p=2.0
+Total loss:     210.761 (rec:34.004, round:176.758)     b=12.50 count=13000     p=2.0
+Total loss:     205.135 (rec:32.878, round:172.256)     b=11.75 count=13500     p=2.0
+Total loss:     198.974 (rec:31.771, round:167.203)     b=11.00 count=14000     p=2.0
+Total loss:     196.407 (rec:34.853, round:161.554)     b=10.25 count=14500     p=2.0
+Total loss:     181.441 (rec:26.028, round:155.413)     b=9.50  count=15000     p=2.0
+Total loss:     178.715 (rec:29.747, round:148.968)     b=8.75  count=15500     p=2.0
+Total loss:     172.657 (rec:30.706, round:141.951)     b=8.00  count=16000     p=2.0
+Total loss:     162.686 (rec:28.698, round:133.988)     b=7.25  count=16500     p=2.0
+Total loss:     158.962 (rec:34.243, round:124.719)     b=6.50  count=17000     p=2.0
+Total loss:     145.958 (rec:31.351, round:114.607)     b=5.75  count=17500     p=2.0
+Total loss:     136.055 (rec:33.011, round:103.045)     b=5.00  count=18000     p=2.0
+Total loss:     124.033 (rec:34.557, round:89.475)      b=4.25  count=18500     p=2.0
+Total loss:     110.809 (rec:36.719, round:74.090)      b=3.50  count=19000     p=2.0
+Total loss:     90.354 (rec:34.000, round:56.354)       b=2.75  count=19500     p=2.0
+Total loss:     73.456 (rec:36.430, round:37.026)       b=2.00  count=20000     p=2.0
+Reconstruction for layer 0
+Init alpha to be FP32
+Parameter containing:
+tensor(0.1764, device='cuda:0', requires_grad=True)
+Total loss:     21.003 (rec:21.003, round:0.000)        b=0.00  count=500       p=2.0
+Total loss:     21.084 (rec:21.084, round:0.000)        b=0.00  count=1000      p=2.0
+Total loss:     19.540 (rec:19.540, round:0.000)        b=0.00  count=1500      p=2.0
+Total loss:     13.862 (rec:13.862, round:0.000)        b=0.00  count=2000      p=2.0
+Total loss:     15.469 (rec:15.469, round:0.000)        b=0.00  count=2500      p=2.0
+Total loss:     17.253 (rec:17.253, round:0.000)        b=0.00  count=3000      p=2.0
+Total loss:     16.739 (rec:16.739, round:0.000)        b=0.00  count=3500      p=2.0
+Total loss:     2667.374 (rec:16.180, round:2651.194)   b=26.00 count=4000      p=2.0
+Total loss:     1923.845 (rec:15.582, round:1908.263)   b=25.25 count=4500      p=2.0
+Total loss:     1826.706 (rec:15.016, round:1811.691)   b=24.50 count=5000      p=2.0
+Total loss:     1761.564 (rec:14.938, round:1746.626)   b=23.75 count=5500      p=2.0
+Total loss:     1706.457 (rec:15.384, round:1691.073)   b=23.00 count=6000      p=2.0
+Total loss:     1657.345 (rec:16.562, round:1640.783)   b=22.25 count=6500      p=2.0
+Total loss:     1604.996 (rec:13.766, round:1591.231)   b=21.50 count=7000      p=2.0
+Total loss:     1561.176 (rec:17.381, round:1543.795)   b=20.75 count=7500      p=2.0
+Total loss:     1511.289 (rec:14.013, round:1497.276)   b=20.00 count=8000      p=2.0
+Total loss:     1466.711 (rec:15.134, round:1451.578)   b=19.25 count=8500      p=2.0
+Total loss:     1422.692 (rec:16.241, round:1406.452)   b=18.50 count=9000      p=2.0
+Total loss:     1378.709 (rec:17.054, round:1361.656)   b=17.75 count=9500      p=2.0
+Total loss:     1335.394 (rec:18.561, round:1316.833)   b=17.00 count=10000     p=2.0
+Total loss:     1284.042 (rec:12.489, round:1271.554)   b=16.25 count=10500     p=2.0
+Total loss:     1241.681 (rec:15.363, round:1226.319)   b=15.50 count=11000     p=2.0
+Total loss:     1196.320 (rec:15.210, round:1181.111)   b=14.75 count=11500     p=2.0
+Total loss:     1148.164 (rec:13.834, round:1134.330)   b=14.00 count=12000     p=2.0
+Total loss:     1102.840 (rec:15.134, round:1087.707)   b=13.25 count=12500     p=2.0
+Total loss:     1053.754 (rec:16.052, round:1037.702)   b=12.50 count=13000     p=2.0
+Total loss:     1001.197 (rec:15.549, round:985.647)    b=11.75 count=13500     p=2.0
+Total loss:     951.586 (rec:19.771, round:931.814)     b=11.00 count=14000     p=2.0
+Total loss:     887.954 (rec:13.433, round:874.522)     b=10.25 count=14500     p=2.0
+Total loss:     828.854 (rec:14.905, round:813.950)     b=9.50  count=15000     p=2.0
+Total loss:     765.182 (rec:16.142, round:749.040)     b=8.75  count=15500     p=2.0
+Total loss:     696.004 (rec:16.591, round:679.412)     b=8.00  count=16000     p=2.0
+Total loss:     620.731 (rec:16.247, round:604.484)     b=7.25  count=16500     p=2.0
+Total loss:     541.671 (rec:17.484, round:524.187)     b=6.50  count=17000     p=2.0
+Total loss:     454.785 (rec:16.856, round:437.929)     b=5.75  count=17500     p=2.0
+Total loss:     361.545 (rec:15.850, round:345.695)     b=5.00  count=18000     p=2.0
+Total loss:     259.174 (rec:13.443, round:245.731)     b=4.25  count=18500     p=2.0
+Total loss:     165.190 (rec:19.493, round:145.697)     b=3.50  count=19000     p=2.0
+Total loss:     75.923 (rec:14.398, round:61.525)       b=2.75  count=19500     p=2.0
+Total loss:     34.380 (rec:17.740, round:16.639)       b=2.00  count=20000     p=2.0
+Reconstruction for layer 0
+Init alpha to be FP32
+Parameter containing:
+tensor(0.1765, device='cuda:0', requires_grad=True)
+Total loss:     27.047 (rec:27.047, round:0.000)        b=0.00  count=500       p=2.0
+Total loss:     20.988 (rec:20.988, round:0.000)        b=0.00  count=1000      p=2.0
+Total loss:     17.393 (rec:17.393, round:0.000)        b=0.00  count=1500      p=2.0
+Total loss:     18.690 (rec:18.690, round:0.000)        b=0.00  count=2000      p=2.0
+Total loss:     13.809 (rec:13.809, round:0.000)        b=0.00  count=2500      p=2.0
+Total loss:     16.690 (rec:16.690, round:0.000)        b=0.00  count=3000      p=2.0
+Total loss:     15.417 (rec:15.417, round:0.000)        b=0.00  count=3500      p=2.0
+Total loss:     11041.557 (rec:11.752, round:11029.805) b=26.00 count=4000      p=2.0
+Total loss:     7725.772 (rec:11.741, round:7714.031)   b=25.25 count=4500      p=2.0
+Total loss:     7367.497 (rec:12.010, round:7355.487)   b=24.50 count=5000      p=2.0
+Total loss:     7137.187 (rec:14.605, round:7122.582)   b=23.75 count=5500      p=2.0
+Total loss:     6941.758 (rec:13.425, round:6928.333)   b=23.00 count=6000      p=2.0
+Total loss:     6767.795 (rec:13.041, round:6754.754)   b=22.25 count=6500      p=2.0
+Total loss:     6613.249 (rec:21.884, round:6591.365)   b=21.50 count=7000      p=2.0
+Total loss:     6446.077 (rec:17.231, round:6428.846)   b=20.75 count=7500      p=2.0
+Total loss:     6280.006 (rec:12.148, round:6267.857)   b=20.00 count=8000      p=2.0
+Total loss:     6123.803 (rec:15.734, round:6108.069)   b=19.25 count=8500      p=2.0
+Total loss:     5962.723 (rec:14.954, round:5947.769)   b=18.50 count=9000      p=2.0
+Total loss:     5798.510 (rec:13.323, round:5785.188)   b=17.75 count=9500      p=2.0
+Total loss:     5635.495 (rec:17.087, round:5618.407)   b=17.00 count=10000     p=2.0
+Total loss:     5462.344 (rec:14.430, round:5447.913)   b=16.25 count=10500     p=2.0
+Total loss:     5287.640 (rec:15.677, round:5271.964)   b=15.50 count=11000     p=2.0
+Total loss:     5103.499 (rec:16.241, round:5087.257)   b=14.75 count=11500     p=2.0
+Total loss:     4907.479 (rec:13.681, round:4893.798)   b=14.00 count=12000     p=2.0
+Total loss:     4702.851 (rec:11.743, round:4691.108)   b=13.25 count=12500     p=2.0
+Total loss:     4494.605 (rec:14.926, round:4479.679)   b=12.50 count=13000     p=2.0
+Total loss:     4271.466 (rec:14.499, round:4256.967)   b=11.75 count=13500     p=2.0
+Total loss:     4032.163 (rec:12.088, round:4020.075)   b=11.00 count=14000     p=2.0
+Total loss:     3781.090 (rec:14.901, round:3766.190)   b=10.25 count=14500     p=2.0
+Total loss:     3513.828 (rec:16.134, round:3497.693)   b=9.50  count=15000     p=2.0
+Total loss:     3222.160 (rec:17.940, round:3204.220)   b=8.75  count=15500     p=2.0
+Total loss:     2902.727 (rec:12.035, round:2890.692)   b=8.00  count=16000     p=2.0
+Total loss:     2568.837 (rec:17.765, round:2551.072)   b=7.25  count=16500     p=2.0
+Total loss:     2201.263 (rec:16.122, round:2185.141)   b=6.50  count=17000     p=2.0
+Total loss:     1803.666 (rec:12.851, round:1790.815)   b=5.75  count=17500     p=2.0
+Total loss:     1388.134 (rec:18.215, round:1369.919)   b=5.00  count=18000     p=2.0
+Total loss:     944.667 (rec:17.786, round:926.881)     b=4.25  count=18500     p=2.0
+Total loss:     519.471 (rec:17.857, round:501.615)     b=3.50  count=19000     p=2.0
+Total loss:     195.770 (rec:16.993, round:178.777)     b=2.75  count=19500     p=2.0
+Total loss:     55.481 (rec:19.706, round:35.774)       b=2.00  count=20000     p=2.0
+Reconstruction for layer 0
+Init alpha to be FP32
+Parameter containing:
+tensor(1.4110, device='cuda:0', requires_grad=True)
+Total loss:     97.791 (rec:97.791, round:0.000)        b=0.00  count=500       p=2.0
+Total loss:     70.887 (rec:70.887, round:0.000)        b=0.00  count=1000      p=2.0
+Total loss:     51.565 (rec:51.565, round:0.000)        b=0.00  count=1500      p=2.0
+Total loss:     56.380 (rec:56.380, round:0.000)        b=0.00  count=2000      p=2.0
+Total loss:     39.033 (rec:39.033, round:0.000)        b=0.00  count=2500      p=2.0
+Total loss:     38.482 (rec:38.482, round:0.000)        b=0.00  count=3000      p=2.0
+Total loss:     35.252 (rec:35.252, round:0.000)        b=0.00  count=3500      p=2.0
+Total loss:     1254.497 (rec:34.607, round:1219.890)   b=26.00 count=4000      p=2.0
+Total loss:     976.411 (rec:37.714, round:938.697)     b=25.25 count=4500      p=2.0
+Total loss:     933.680 (rec:34.240, round:899.439)     b=24.50 count=5000      p=2.0
+Total loss:     910.971 (rec:36.178, round:874.794)     b=23.75 count=5500      p=2.0
+Total loss:     887.442 (rec:32.126, round:855.315)     b=23.00 count=6000      p=2.0
+Total loss:     868.863 (rec:30.774, round:838.089)     b=22.25 count=6500      p=2.0
+Total loss:     853.908 (rec:31.412, round:822.496)     b=21.50 count=7000      p=2.0
+Total loss:     837.148 (rec:30.532, round:806.615)     b=20.75 count=7500      p=2.0
+Total loss:     821.824 (rec:30.936, round:790.888)     b=20.00 count=8000      p=2.0
+Total loss:     806.977 (rec:31.348, round:775.629)     b=19.25 count=8500      p=2.0
+Total loss:     798.038 (rec:37.171, round:760.867)     b=18.50 count=9000      p=2.0
+Total loss:     785.497 (rec:40.440, round:745.058)     b=17.75 count=9500      p=2.0
+Total loss:     762.667 (rec:33.081, round:729.585)     b=17.00 count=10000     p=2.0
+Total loss:     750.149 (rec:36.294, round:713.855)     b=16.25 count=10500     p=2.0
+Total loss:     729.918 (rec:32.270, round:697.649)     b=15.50 count=11000     p=2.0
+Total loss:     718.145 (rec:37.576, round:680.570)     b=14.75 count=11500     p=2.0
+Total loss:     695.051 (rec:32.193, round:662.858)     b=14.00 count=12000     p=2.0
+Total loss:     671.562 (rec:28.255, round:643.307)     b=13.25 count=12500     p=2.0
+Total loss:     652.251 (rec:28.627, round:623.624)     b=12.50 count=13000     p=2.0
+Total loss:     631.624 (rec:29.781, round:601.843)     b=11.75 count=13500     p=2.0
+Total loss:     612.597 (rec:34.417, round:578.181)     b=11.00 count=14000     p=2.0
+Total loss:     585.481 (rec:32.145, round:553.336)     b=10.25 count=14500     p=2.0
+Total loss:     563.147 (rec:36.540, round:526.607)     b=9.50  count=15000     p=2.0
+Total loss:     528.083 (rec:30.847, round:497.236)     b=8.75  count=15500     p=2.0
+Total loss:     508.885 (rec:43.488, round:465.396)     b=8.00  count=16000     p=2.0
+Total loss:     472.282 (rec:41.829, round:430.453)     b=7.25  count=16500     p=2.0
+Total loss:     427.551 (rec:35.655, round:391.896)     b=6.50  count=17000     p=2.0
+Total loss:     386.214 (rec:37.900, round:348.314)     b=5.75  count=17500     p=2.0
+Total loss:     335.104 (rec:35.779, round:299.325)     b=5.00  count=18000     p=2.0
+Total loss:     279.130 (rec:34.667, round:244.462)     b=4.25  count=18500     p=2.0
+Total loss:     224.334 (rec:40.817, round:183.517)     b=3.50  count=19000     p=2.0
+Total loss:     161.310 (rec:42.906, round:118.404)     b=2.75  count=19500     p=2.0
+Total loss:     110.899 (rec:51.840, round:59.059)      b=2.00  count=20000     p=2.0
+Reconstruction for layer 0
+Init alpha to be FP32
+Parameter containing:
+tensor(0.0882, device='cuda:0', requires_grad=True)
+Total loss:     135.062 (rec:135.062, round:0.000)      b=0.00  count=500       p=2.0
+Total loss:     97.662 (rec:97.662, round:0.000)        b=0.00  count=1000      p=2.0
+Total loss:     72.454 (rec:72.454, round:0.000)        b=0.00  count=1500      p=2.0
+Total loss:     67.820 (rec:67.820, round:0.000)        b=0.00  count=2000      p=2.0
+Total loss:     57.344 (rec:57.344, round:0.000)        b=0.00  count=2500      p=2.0
+Total loss:     33.479 (rec:33.479, round:0.000)        b=0.00  count=3000      p=2.0
+Total loss:     61.977 (rec:61.977, round:0.000)        b=0.00  count=3500      p=2.0
+Total loss:     10700.960 (rec:42.324, round:10658.636) b=26.00 count=4000      p=2.0
+Total loss:     7292.385 (rec:35.255, round:7257.130)   b=25.25 count=4500      p=2.0
+Total loss:     6912.058 (rec:38.957, round:6873.101)   b=24.50 count=5000      p=2.0
+Total loss:     6643.588 (rec:43.656, round:6599.932)   b=23.75 count=5500      p=2.0
+Total loss:     6398.877 (rec:38.205, round:6360.672)   b=23.00 count=6000      p=2.0
+Total loss:     6172.003 (rec:34.748, round:6137.255)   b=22.25 count=6500      p=2.0
+Total loss:     5962.550 (rec:39.142, round:5923.409)   b=21.50 count=7000      p=2.0
+Total loss:     5752.651 (rec:36.497, round:5716.155)   b=20.75 count=7500      p=2.0
+Total loss:     5548.822 (rec:33.251, round:5515.571)   b=20.00 count=8000      p=2.0
+Total loss:     5358.813 (rec:40.908, round:5317.905)   b=19.25 count=8500      p=2.0
+Total loss:     5152.770 (rec:33.959, round:5118.811)   b=18.50 count=9000      p=2.0
+Total loss:     4964.169 (rec:43.818, round:4920.352)   b=17.75 count=9500      p=2.0
+Total loss:     4768.490 (rec:42.297, round:4726.193)   b=17.00 count=10000     p=2.0
+Total loss:     4571.451 (rec:40.865, round:4530.585)   b=16.25 count=10500     p=2.0
+Total loss:     4376.343 (rec:39.243, round:4337.100)   b=15.50 count=11000     p=2.0
+Total loss:     4172.432 (rec:34.965, round:4137.467)   b=14.75 count=11500     p=2.0
+Total loss:     3973.281 (rec:37.403, round:3935.878)   b=14.00 count=12000     p=2.0
+Total loss:     3764.391 (rec:34.304, round:3730.087)   b=13.25 count=12500     p=2.0
+Total loss:     3554.559 (rec:33.398, round:3521.161)   b=12.50 count=13000     p=2.0
+Total loss:     3338.469 (rec:32.954, round:3305.516)   b=11.75 count=13500     p=2.0
+Total loss:     3115.274 (rec:31.268, round:3084.006)   b=11.00 count=14000     p=2.0
+Total loss:     2896.029 (rec:39.942, round:2856.086)   b=10.25 count=14500     p=2.0
+Total loss:     2655.809 (rec:38.975, round:2616.834)   b=9.50  count=15000     p=2.0
+Total loss:     2398.675 (rec:32.052, round:2366.622)   b=8.75  count=15500     p=2.0
+Total loss:     2138.062 (rec:32.035, round:2106.027)   b=8.00  count=16000     p=2.0
+Total loss:     1870.814 (rec:40.733, round:1830.081)   b=7.25  count=16500     p=2.0
+Total loss:     1577.471 (rec:38.845, round:1538.625)   b=6.50  count=17000     p=2.0
+Total loss:     1271.688 (rec:39.419, round:1232.269)   b=5.75  count=17500     p=2.0
+Total loss:     949.557 (rec:35.658, round:913.900)     b=5.00  count=18000     p=2.0
+Total loss:     630.603 (rec:36.767, round:593.836)     b=4.25  count=18500     p=2.0
+Total loss:     337.260 (rec:33.525, round:303.735)     b=3.50  count=19000     p=2.0
+Total loss:     140.455 (rec:38.843, round:101.612)     b=2.75  count=19500     p=2.0
+Total loss:     62.420 (rec:42.695, round:19.725)       b=2.00  count=20000     p=2.0
+Reconstruction for layer 0
+Init alpha to be FP32
+Parameter containing:
+tensor(0.7053, device='cuda:0', requires_grad=True)
+Total loss:     19.000 (rec:19.000, round:0.000)        b=0.00  count=500       p=2.0
+Total loss:     16.111 (rec:16.111, round:0.000)        b=0.00  count=1000      p=2.0
+Total loss:     17.219 (rec:17.219, round:0.000)        b=0.00  count=1500      p=2.0
+Total loss:     14.546 (rec:14.546, round:0.000)        b=0.00  count=2000      p=2.0
+Total loss:     11.350 (rec:11.350, round:0.000)        b=0.00  count=2500      p=2.0
+Total loss:     14.286 (rec:14.286, round:0.000)        b=0.00  count=3000      p=2.0
+Total loss:     15.562 (rec:15.562, round:0.000)        b=0.00  count=3500      p=2.0
+Total loss:     1215.881 (rec:12.114, round:1203.766)   b=26.00 count=4000      p=2.0
+Total loss:     904.777 (rec:14.709, round:890.068)     b=25.25 count=4500      p=2.0
+Total loss:     861.909 (rec:13.073, round:848.836)     b=24.50 count=5000      p=2.0
+Total loss:     837.619 (rec:14.119, round:823.499)     b=23.75 count=5500      p=2.0
+Total loss:     815.013 (rec:12.842, round:802.171)     b=23.00 count=6000      p=2.0
+Total loss:     795.617 (rec:13.064, round:782.553)     b=22.25 count=6500      p=2.0
+Total loss:     776.353 (rec:12.468, round:763.885)     b=21.50 count=7000      p=2.0
+Total loss:     761.099 (rec:15.655, round:745.444)     b=20.75 count=7500      p=2.0
+Total loss:     740.890 (rec:13.237, round:727.654)     b=20.00 count=8000      p=2.0
+Total loss:     723.740 (rec:14.577, round:709.163)     b=19.25 count=8500      p=2.0
+Total loss:     707.372 (rec:16.513, round:690.859)     b=18.50 count=9000      p=2.0
+Total loss:     689.178 (rec:15.944, round:673.234)     b=17.75 count=9500      p=2.0
+Total loss:     668.801 (rec:13.610, round:655.191)     b=17.00 count=10000     p=2.0
+Total loss:     650.445 (rec:13.936, round:636.510)     b=16.25 count=10500     p=2.0
+Total loss:     630.989 (rec:13.424, round:617.565)     b=15.50 count=11000     p=2.0
+Total loss:     611.393 (rec:13.959, round:597.435)     b=14.75 count=11500     p=2.0
+Total loss:     591.143 (rec:14.489, round:576.655)     b=14.00 count=12000     p=2.0
+Total loss:     569.413 (rec:12.899, round:556.514)     b=13.25 count=12500     p=2.0
+Total loss:     547.898 (rec:14.713, round:533.185)     b=12.50 count=13000     p=2.0
+Total loss:     523.991 (rec:14.797, round:509.194)     b=11.75 count=13500     p=2.0
+Total loss:     497.624 (rec:14.108, round:483.516)     b=11.00 count=14000     p=2.0
+Total loss:     471.903 (rec:15.052, round:456.851)     b=10.25 count=14500     p=2.0
+Total loss:     441.822 (rec:13.590, round:428.232)     b=9.50  count=15000     p=2.0
+Total loss:     409.759 (rec:12.835, round:396.924)     b=8.75  count=15500     p=2.0
+Total loss:     377.076 (rec:13.460, round:363.616)     b=8.00  count=16000     p=2.0
+Total loss:     340.567 (rec:12.703, round:327.864)     b=7.25  count=16500     p=2.0
+Total loss:     300.555 (rec:12.438, round:288.117)     b=6.50  count=17000     p=2.0
+Total loss:     260.596 (rec:14.783, round:245.813)     b=5.75  count=17500     p=2.0
+Total loss:     215.186 (rec:15.580, round:199.606)     b=5.00  count=18000     p=2.0
+Total loss:     162.575 (rec:13.927, round:148.648)     b=4.25  count=18500     p=2.0
+Total loss:     109.250 (rec:12.626, round:96.624)      b=3.50  count=19000     p=2.0
+Total loss:     66.548 (rec:15.544, round:51.003)       b=2.75  count=19500     p=2.0
+Total loss:     36.835 (rec:15.665, round:21.170)       b=2.00  count=20000     p=2.0
+Reconstruction for layer 0
+Init alpha to be FP32
+Parameter containing:
+tensor(0.1763, device='cuda:0', requires_grad=True)
+Total loss:     4.961 (rec:4.961, round:0.000)  b=0.00  count=500       p=2.0
+Total loss:     3.966 (rec:3.966, round:0.000)  b=0.00  count=1000      p=2.0
+Total loss:     3.728 (rec:3.728, round:0.000)  b=0.00  count=1500      p=2.0
+Total loss:     4.434 (rec:4.434, round:0.000)  b=0.00  count=2000      p=2.0
+Total loss:     4.104 (rec:4.104, round:0.000)  b=0.00  count=2500      p=2.0
+Total loss:     3.527 (rec:3.527, round:0.000)  b=0.00  count=3000      p=2.0
+Total loss:     3.407 (rec:3.407, round:0.000)  b=0.00  count=3500      p=2.0
+Total loss:     11029.846 (rec:3.691, round:11026.154)  b=26.00 count=4000      p=2.0
+Total loss:     7229.155 (rec:3.491, round:7225.664)    b=25.25 count=4500      p=2.0
+Total loss:     6872.411 (rec:3.355, round:6869.056)    b=24.50 count=5000      p=2.0
+Total loss:     6636.643 (rec:3.676, round:6632.966)    b=23.75 count=5500      p=2.0
+Total loss:     6435.903 (rec:3.675, round:6432.229)    b=23.00 count=6000      p=2.0
+Total loss:     6249.001 (rec:3.632, round:6245.370)    b=22.25 count=6500      p=2.0
+Total loss:     6071.553 (rec:4.024, round:6067.529)    b=21.50 count=7000      p=2.0
+Total loss:     5895.864 (rec:3.660, round:5892.204)    b=20.75 count=7500      p=2.0
+Total loss:     5718.205 (rec:3.273, round:5714.932)    b=20.00 count=8000      p=2.0
+Total loss:     5540.932 (rec:3.479, round:5537.452)    b=19.25 count=8500      p=2.0
+Total loss:     5363.626 (rec:3.849, round:5359.777)    b=18.50 count=9000      p=2.0
+Total loss:     5179.467 (rec:3.423, round:5176.043)    b=17.75 count=9500      p=2.0
+Total loss:     4992.762 (rec:3.856, round:4988.905)    b=17.00 count=10000     p=2.0
+Total loss:     4800.759 (rec:4.044, round:4796.715)    b=16.25 count=10500     p=2.0
+Total loss:     4605.351 (rec:3.559, round:4601.791)    b=15.50 count=11000     p=2.0
+Total loss:     4404.950 (rec:3.763, round:4401.187)    b=14.75 count=11500     p=2.0
+Total loss:     4197.128 (rec:3.735, round:4193.393)    b=14.00 count=12000     p=2.0
+Total loss:     3980.295 (rec:3.557, round:3976.738)    b=13.25 count=12500     p=2.0
+Total loss:     3754.054 (rec:3.819, round:3750.235)    b=12.50 count=13000     p=2.0
+Total loss:     3519.164 (rec:3.608, round:3515.556)    b=11.75 count=13500     p=2.0
+Total loss:     3276.014 (rec:3.554, round:3272.460)    b=11.00 count=14000     p=2.0
+Total loss:     3018.352 (rec:3.387, round:3014.966)    b=10.25 count=14500     p=2.0
+Total loss:     2748.182 (rec:3.419, round:2744.764)    b=9.50  count=15000     p=2.0
+Total loss:     2462.117 (rec:3.457, round:2458.660)    b=8.75  count=15500     p=2.0
+Total loss:     2159.931 (rec:3.338, round:2156.593)    b=8.00  count=16000     p=2.0
+Total loss:     1845.013 (rec:3.806, round:1841.207)    b=7.25  count=16500     p=2.0
+Total loss:     1510.709 (rec:3.373, round:1507.336)    b=6.50  count=17000     p=2.0
+Total loss:     1164.097 (rec:3.711, round:1160.386)    b=5.75  count=17500     p=2.0
+Total loss:     803.432 (rec:3.344, round:800.088)      b=5.00  count=18000     p=2.0
+Total loss:     455.862 (rec:3.963, round:451.899)      b=4.25  count=18500     p=2.0
+Total loss:     185.959 (rec:3.907, round:182.052)      b=3.50  count=19000     p=2.0
+Total loss:     56.897 (rec:4.488, round:52.409)        b=2.75  count=19500     p=2.0
+Total loss:     14.873 (rec:4.260, round:10.613)        b=2.00  count=20000     p=2.0
+Reconstruction for layer 0
+Init alpha to be FP32
+Parameter containing:
+tensor(0.0879, device='cuda:0', requires_grad=True)
+Total loss:     8.773 (rec:8.773, round:0.000)  b=0.00  count=500       p=2.0
+Total loss:     7.374 (rec:7.374, round:0.000)  b=0.00  count=1000      p=2.0
+Total loss:     7.771 (rec:7.771, round:0.000)  b=0.00  count=1500      p=2.0
+Total loss:     6.398 (rec:6.398, round:0.000)  b=0.00  count=2000      p=2.0
+Total loss:     6.947 (rec:6.947, round:0.000)  b=0.00  count=2500      p=2.0
+Total loss:     7.015 (rec:7.015, round:0.000)  b=0.00  count=3000      p=2.0
+Total loss:     5.488 (rec:5.488, round:0.000)  b=0.00  count=3500      p=2.0
+Total loss:     44480.492 (rec:5.166, round:44475.324)  b=26.00 count=4000      p=2.0
+Total loss:     28504.199 (rec:6.846, round:28497.354)  b=25.25 count=4500      p=2.0
+Total loss:     27082.656 (rec:5.628, round:27077.029)  b=24.50 count=5000      p=2.0
+Total loss:     26149.539 (rec:6.111, round:26143.428)  b=23.75 count=5500      p=2.0
+Total loss:     25358.242 (rec:5.783, round:25352.459)  b=23.00 count=6000      p=2.0
+Total loss:     24624.848 (rec:5.613, round:24619.234)  b=22.25 count=6500      p=2.0
+Total loss:     23919.145 (rec:5.090, round:23914.055)  b=21.50 count=7000      p=2.0
+Total loss:     23226.020 (rec:5.642, round:23220.379)  b=20.75 count=7500      p=2.0
+Total loss:     22527.248 (rec:5.463, round:22521.785)  b=20.00 count=8000      p=2.0
+Total loss:     21823.168 (rec:5.503, round:21817.664)  b=19.25 count=8500      p=2.0
+Total loss:     21112.877 (rec:5.929, round:21106.949)  b=18.50 count=9000      p=2.0
+Total loss:     20385.832 (rec:5.820, round:20380.012)  b=17.75 count=9500      p=2.0
+Total loss:     19647.896 (rec:5.825, round:19642.072)  b=17.00 count=10000     p=2.0
+Total loss:     18893.420 (rec:5.045, round:18888.375)  b=16.25 count=10500     p=2.0
+Total loss:     18114.359 (rec:5.252, round:18109.107)  b=15.50 count=11000     p=2.0
+Total loss:     17308.855 (rec:5.227, round:17303.629)  b=14.75 count=11500     p=2.0
+Total loss:     16478.152 (rec:4.921, round:16473.230)  b=14.00 count=12000     p=2.0
+Total loss:     15615.295 (rec:5.195, round:15610.100)  b=13.25 count=12500     p=2.0
+Total loss:     14713.201 (rec:5.084, round:14708.117)  b=12.50 count=13000     p=2.0
+Total loss:     13771.623 (rec:6.463, round:13765.160)  b=11.75 count=13500     p=2.0
+Total loss:     12787.192 (rec:5.223, round:12781.969)  b=11.00 count=14000     p=2.0
+Total loss:     11764.380 (rec:5.733, round:11758.647)  b=10.25 count=14500     p=2.0
+Total loss:     10688.095 (rec:5.827, round:10682.268)  b=9.50  count=15000     p=2.0
+Total loss:     9564.383 (rec:4.910, round:9559.473)    b=8.75  count=15500     p=2.0
+Total loss:     8391.037 (rec:5.363, round:8385.675)    b=8.00  count=16000     p=2.0
+Total loss:     7158.691 (rec:4.481, round:7154.210)    b=7.25  count=16500     p=2.0
+Total loss:     5874.707 (rec:5.677, round:5869.029)    b=6.50  count=17000     p=2.0
+Total loss:     4532.610 (rec:5.184, round:4527.426)    b=5.75  count=17500     p=2.0
+Total loss:     3145.903 (rec:6.235, round:3139.668)    b=5.00  count=18000     p=2.0
+Total loss:     1824.093 (rec:5.845, round:1818.248)    b=4.25  count=18500     p=2.0
+Total loss:     780.930 (rec:4.524, round:776.406)      b=3.50  count=19000     p=2.0
+Total loss:     161.302 (rec:5.871, round:155.431)      b=2.75  count=19500     p=2.0
+Total loss:     16.481 (rec:5.777, round:10.704)        b=2.00  count=20000     p=2.0
+Reconstruction for layer 0
+Init alpha to be FP32
+Parameter containing:
+tensor(0.7059, device='cuda:0', requires_grad=True)
+Total loss:     18.250 (rec:18.250, round:0.000)        b=0.00  count=500       p=2.0
+Total loss:     12.870 (rec:12.870, round:0.000)        b=0.00  count=1000      p=2.0
+Total loss:     10.738 (rec:10.738, round:0.000)        b=0.00  count=1500      p=2.0
+Total loss:     10.817 (rec:10.817, round:0.000)        b=0.00  count=2000      p=2.0
+Total loss:     10.923 (rec:10.923, round:0.000)        b=0.00  count=2500      p=2.0
+Total loss:     10.061 (rec:10.061, round:0.000)        b=0.00  count=3000      p=2.0
+Total loss:     10.343 (rec:10.343, round:0.000)        b=0.00  count=3500      p=2.0
+Total loss:     4888.252 (rec:9.411, round:4878.841)    b=26.00 count=4000      p=2.0
+Total loss:     3364.763 (rec:9.112, round:3355.651)    b=25.25 count=4500      p=2.0
+Total loss:     3201.917 (rec:8.301, round:3193.617)    b=24.50 count=5000      p=2.0
+Total loss:     3093.069 (rec:7.964, round:3085.104)    b=23.75 count=5500      p=2.0
+Total loss:     3002.054 (rec:9.261, round:2992.793)    b=23.00 count=6000      p=2.0
+Total loss:     2917.019 (rec:8.141, round:2908.877)    b=22.25 count=6500      p=2.0
+Total loss:     2836.032 (rec:8.521, round:2827.511)    b=21.50 count=7000      p=2.0
+Total loss:     2758.774 (rec:9.213, round:2749.561)    b=20.75 count=7500      p=2.0
+Total loss:     2678.446 (rec:8.083, round:2670.363)    b=20.00 count=8000      p=2.0
+Total loss:     2599.423 (rec:7.979, round:2591.445)    b=19.25 count=8500      p=2.0
+Total loss:     2518.904 (rec:7.856, round:2511.047)    b=18.50 count=9000      p=2.0
+Total loss:     2439.239 (rec:7.517, round:2431.722)    b=17.75 count=9500      p=2.0
+Total loss:     2358.500 (rec:7.424, round:2351.076)    b=17.00 count=10000     p=2.0
+Total loss:     2275.478 (rec:6.609, round:2268.869)    b=16.25 count=10500     p=2.0
+Total loss:     2192.038 (rec:8.388, round:2183.649)    b=15.50 count=11000     p=2.0
+Total loss:     2105.061 (rec:8.845, round:2096.217)    b=14.75 count=11500     p=2.0
+Total loss:     2013.010 (rec:7.388, round:2005.622)    b=14.00 count=12000     p=2.0
+Total loss:     1918.246 (rec:7.200, round:1911.047)    b=13.25 count=12500     p=2.0
+Total loss:     1822.269 (rec:7.921, round:1814.348)    b=12.50 count=13000     p=2.0
+Total loss:     1719.062 (rec:7.348, round:1711.714)    b=11.75 count=13500     p=2.0
+Total loss:     1614.793 (rec:8.386, round:1606.407)    b=11.00 count=14000     p=2.0
+Total loss:     1502.859 (rec:7.978, round:1494.881)    b=10.25 count=14500     p=2.0
+Total loss:     1384.878 (rec:6.763, round:1378.115)    b=9.50  count=15000     p=2.0
+Total loss:     1260.034 (rec:8.022, round:1252.012)    b=8.75  count=15500     p=2.0
+Total loss:     1128.638 (rec:7.843, round:1120.795)    b=8.00  count=16000     p=2.0
+Total loss:     988.714 (rec:8.625, round:980.089)      b=7.25  count=16500     p=2.0
+Total loss:     838.594 (rec:8.174, round:830.420)      b=6.50  count=17000     p=2.0
+Total loss:     679.084 (rec:7.296, round:671.787)      b=5.75  count=17500     p=2.0
+Total loss:     513.355 (rec:8.312, round:505.044)      b=5.00  count=18000     p=2.0
+Total loss:     340.582 (rec:7.857, round:332.725)      b=4.25  count=18500     p=2.0
+Total loss:     180.557 (rec:9.282, round:171.274)      b=3.50  count=19000     p=2.0
+Total loss:     74.021 (rec:8.446, round:65.575)        b=2.75  count=19500     p=2.0
+Total loss:     27.485 (rec:8.805, round:18.680)        b=2.00  count=20000     p=2.0
+Reconstruction for layer 0
+Init alpha to be FP32
+Parameter containing:
+tensor(0.0882, device='cuda:0', requires_grad=True)
+Total loss:     5.760 (rec:5.760, round:0.000)  b=0.00  count=500       p=2.0
+Total loss:     4.635 (rec:4.635, round:0.000)  b=0.00  count=1000      p=2.0
+Total loss:     4.366 (rec:4.366, round:0.000)  b=0.00  count=1500      p=2.0
+Total loss:     3.981 (rec:3.981, round:0.000)  b=0.00  count=2000      p=2.0
+Total loss:     3.288 (rec:3.288, round:0.000)  b=0.00  count=2500      p=2.0
+Total loss:     2.942 (rec:2.942, round:0.000)  b=0.00  count=3000      p=2.0
+Total loss:     3.597 (rec:3.597, round:0.000)  b=0.00  count=3500      p=2.0
+Total loss:     44122.930 (rec:2.969, round:44119.961)  b=26.00 count=4000      p=2.0
+Total loss:     27396.086 (rec:2.891, round:27393.195)  b=25.25 count=4500      p=2.0
+Total loss:     25980.807 (rec:3.124, round:25977.684)  b=24.50 count=5000      p=2.0
+Total loss:     25036.691 (rec:2.687, round:25034.004)  b=23.75 count=5500      p=2.0
+Total loss:     24214.830 (rec:2.703, round:24212.127)  b=23.00 count=6000      p=2.0
+Total loss:     23447.184 (rec:2.666, round:23444.518)  b=22.25 count=6500      p=2.0
+Total loss:     22696.518 (rec:2.591, round:22693.928)  b=21.50 count=7000      p=2.0
+Total loss:     21954.035 (rec:2.606, round:21951.430)  b=20.75 count=7500      p=2.0
+Total loss:     21221.451 (rec:2.661, round:21218.789)  b=20.00 count=8000      p=2.0
+Total loss:     20477.873 (rec:2.842, round:20475.031)  b=19.25 count=8500      p=2.0
+Total loss:     19735.943 (rec:2.927, round:19733.018)  b=18.50 count=9000      p=2.0
+Total loss:     18981.396 (rec:2.782, round:18978.615)  b=17.75 count=9500      p=2.0
+Total loss:     18206.264 (rec:2.431, round:18203.834)  b=17.00 count=10000     p=2.0
+Total loss:     17417.502 (rec:2.719, round:17414.783)  b=16.25 count=10500     p=2.0
+Total loss:     16611.158 (rec:2.779, round:16608.379)  b=15.50 count=11000     p=2.0
+Total loss:     15783.226 (rec:2.698, round:15780.527)  b=14.75 count=11500     p=2.0
+Total loss:     14931.658 (rec:2.582, round:14929.076)  b=14.00 count=12000     p=2.0
+Total loss:     14060.283 (rec:2.563, round:14057.720)  b=13.25 count=12500     p=2.0
+Total loss:     13169.022 (rec:2.937, round:13166.085)  b=12.50 count=13000     p=2.0
+Total loss:     12232.208 (rec:2.166, round:12230.042)  b=11.75 count=13500     p=2.0
+Total loss:     11264.128 (rec:2.386, round:11261.741)  b=11.00 count=14000     p=2.0
+Total loss:     10259.721 (rec:2.579, round:10257.142)  b=10.25 count=14500     p=2.0
+Total loss:     9221.301 (rec:2.340, round:9218.961)    b=9.50  count=15000     p=2.0
+Total loss:     8140.962 (rec:2.466, round:8138.496)    b=8.75  count=15500     p=2.0
+Total loss:     7025.893 (rec:2.426, round:7023.466)    b=8.00  count=16000     p=2.0
+Total loss:     5877.308 (rec:2.259, round:5875.049)    b=7.25  count=16500     p=2.0
+Total loss:     4700.648 (rec:2.893, round:4697.755)    b=6.50  count=17000     p=2.0
+Total loss:     3491.514 (rec:2.379, round:3489.135)    b=5.75  count=17500     p=2.0
+Total loss:     2230.333 (rec:2.316, round:2228.017)    b=5.00  count=18000     p=2.0
+Total loss:     1011.624 (rec:2.233, round:1009.391)    b=4.25  count=18500     p=2.0
+Total loss:     318.680 (rec:2.738, round:315.942)      b=3.50  count=19000     p=2.0
+Total loss:     75.537 (rec:3.202, round:72.334)        b=2.75  count=19500     p=2.0
+Total loss:     10.663 (rec:2.534, round:8.128) b=2.00  count=20000     p=2.0
+Reconstruction for layer 0
+Init alpha to be FP32
+Parameter containing:
+tensor(0.7035, device='cuda:0', requires_grad=True)
+Total loss:     8.008 (rec:8.008, round:0.000)  b=0.00  count=500       p=2.0
+Total loss:     7.344 (rec:7.344, round:0.000)  b=0.00  count=1000      p=2.0
+Total loss:     6.918 (rec:6.918, round:0.000)  b=0.00  count=1500      p=2.0
+Total loss:     7.620 (rec:7.620, round:0.000)  b=0.00  count=2000      p=2.0
+Total loss:     6.965 (rec:6.965, round:0.000)  b=0.00  count=2500      p=2.0
+Total loss:     5.314 (rec:5.314, round:0.000)  b=0.00  count=3000      p=2.0
+Total loss:     7.392 (rec:7.392, round:0.000)  b=0.00  count=3500      p=2.0
+Total loss:     4954.233 (rec:5.915, round:4948.318)    b=26.00 count=4000      p=2.0
+Total loss:     3570.427 (rec:6.500, round:3563.927)    b=25.25 count=4500      p=2.0
+Total loss:     3410.090 (rec:5.867, round:3404.223)    b=24.50 count=5000      p=2.0
+Total loss:     3307.577 (rec:5.897, round:3301.680)    b=23.75 count=5500      p=2.0
+Total loss:     3224.779 (rec:5.868, round:3218.911)    b=23.00 count=6000      p=2.0
+Total loss:     3147.551 (rec:5.376, round:3142.175)    b=22.25 count=6500      p=2.0
+Total loss:     3075.502 (rec:5.433, round:3070.069)    b=21.50 count=7000      p=2.0
+Total loss:     3006.908 (rec:5.365, round:3001.543)    b=20.75 count=7500      p=2.0
+Total loss:     2939.008 (rec:5.244, round:2933.764)    b=20.00 count=8000      p=2.0
+Total loss:     2868.852 (rec:5.745, round:2863.107)    b=19.25 count=8500      p=2.0
+Total loss:     2799.454 (rec:6.658, round:2792.796)    b=18.50 count=9000      p=2.0
+Total loss:     2726.966 (rec:5.739, round:2721.227)    b=17.75 count=9500      p=2.0
+Total loss:     2653.778 (rec:5.742, round:2648.036)    b=17.00 count=10000     p=2.0
+Total loss:     2578.501 (rec:5.623, round:2572.878)    b=16.25 count=10500     p=2.0
+Total loss:     2500.747 (rec:5.247, round:2495.500)    b=15.50 count=11000     p=2.0
+Total loss:     2420.343 (rec:5.541, round:2414.801)    b=14.75 count=11500     p=2.0
+Total loss:     2334.928 (rec:5.075, round:2329.853)    b=14.00 count=12000     p=2.0
+Total loss:     2247.547 (rec:6.471, round:2241.076)    b=13.25 count=12500     p=2.0
+Total loss:     2152.551 (rec:5.721, round:2146.830)    b=12.50 count=13000     p=2.0
+Total loss:     2052.151 (rec:4.647, round:2047.504)    b=11.75 count=13500     p=2.0
+Total loss:     1947.062 (rec:6.005, round:1941.057)    b=11.00 count=14000     p=2.0
+Total loss:     1833.636 (rec:4.840, round:1828.797)    b=10.25 count=14500     p=2.0
+Total loss:     1715.100 (rec:5.675, round:1709.425)    b=9.50  count=15000     p=2.0
+Total loss:     1587.489 (rec:5.487, round:1582.002)    b=8.75  count=15500     p=2.0
+Total loss:     1450.496 (rec:6.036, round:1444.460)    b=8.00  count=16000     p=2.0
+Total loss:     1302.059 (rec:4.736, round:1297.323)    b=7.25  count=16500     p=2.0
+Total loss:     1141.855 (rec:5.952, round:1135.903)    b=6.50  count=17000     p=2.0
+Total loss:     964.542 (rec:6.138, round:958.405)      b=5.75  count=17500     p=2.0
+Total loss:     774.545 (rec:6.243, round:768.301)      b=5.00  count=18000     p=2.0
+Total loss:     570.347 (rec:5.695, round:564.651)      b=4.25  count=18500     p=2.0
+Total loss:     356.052 (rec:5.727, round:350.325)      b=3.50  count=19000     p=2.0
+Total loss:     161.100 (rec:5.838, round:155.262)      b=2.75  count=19500     p=2.0
+Total loss:     45.283 (rec:6.474, round:38.809)        b=2.00  count=20000     p=2.0
+Reconstruction for layer 0
+Init alpha to be FP32
+Parameter containing:
+tensor(1.4106, device='cuda:0', requires_grad=True)
+Total loss:     1446.443 (rec:1446.443, round:0.000)    b=0.00  count=500       p=2.0
+Total loss:     1260.209 (rec:1260.209, round:0.000)    b=0.00  count=1000      p=2.0
+Total loss:     888.722 (rec:888.722, round:0.000)      b=0.00  count=1500      p=2.0
+Total loss:     783.546 (rec:783.546, round:0.000)      b=0.00  count=2000      p=2.0
+Total loss:     776.520 (rec:776.520, round:0.000)      b=0.00  count=2500      p=2.0
+Total loss:     775.586 (rec:775.586, round:0.000)      b=0.00  count=3000      p=2.0
+Total loss:     495.426 (rec:495.426, round:0.000)      b=0.00  count=3500      p=2.0
+Total loss:     45356.801 (rec:667.384, round:44689.418)        b=26.00 count=4000      p=2.0
+Total loss:     37140.285 (rec:707.621, round:36432.664)        b=25.25 count=4500      p=2.0
+Total loss:     35655.965 (rec:663.172, round:34992.793)        b=24.50 count=5000      p=2.0
+Total loss:     34789.145 (rec:693.148, round:34095.996)        b=23.75 count=5500      p=2.0
+Total loss:     33940.406 (rec:557.060, round:33383.348)        b=23.00 count=6000      p=2.0
+Total loss:     33287.207 (rec:532.353, round:32754.854)        b=22.25 count=6500      p=2.0
+Total loss:     32710.367 (rec:535.989, round:32174.379)        b=21.50 count=7000      p=2.0
+Total loss:     32180.723 (rec:556.942, round:31623.779)        b=20.75 count=7500      p=2.0
+Total loss:     31608.826 (rec:530.531, round:31078.295)        b=20.00 count=8000      p=2.0
+Total loss:     31253.580 (rec:713.419, round:30540.160)        b=19.25 count=8500      p=2.0
+Total loss:     30540.844 (rec:543.129, round:29997.715)        b=18.50 count=9000      p=2.0
+Total loss:     30029.051 (rec:577.481, round:29451.570)        b=17.75 count=9500      p=2.0
+Total loss:     29467.537 (rec:576.395, round:28891.143)        b=17.00 count=10000     p=2.0
+Total loss:     28882.291 (rec:559.157, round:28323.133)        b=16.25 count=10500     p=2.0
+Total loss:     28375.854 (rec:640.930, round:27734.924)        b=15.50 count=11000     p=2.0
+Total loss:     27667.307 (rec:542.851, round:27124.455)        b=14.75 count=11500     p=2.0
+Total loss:     27137.398 (rec:645.849, round:26491.549)        b=14.00 count=12000     p=2.0
+Total loss:     26428.119 (rec:602.829, round:25825.291)        b=13.25 count=12500     p=2.0
+Total loss:     25790.883 (rec:669.151, round:25121.732)        b=12.50 count=13000     p=2.0
+Total loss:     24947.936 (rec:567.074, round:24380.861)        b=11.75 count=13500     p=2.0
+Total loss:     24223.596 (rec:628.175, round:23595.420)        b=11.00 count=14000     p=2.0
+Total loss:     23310.367 (rec:556.091, round:22754.275)        b=10.25 count=14500     p=2.0
+Total loss:     22368.725 (rec:515.961, round:21852.764)        b=9.50  count=15000     p=2.0
+Total loss:     21467.812 (rec:587.894, round:20879.918)        b=8.75  count=15500     p=2.0
+Total loss:     20392.752 (rec:570.053, round:19822.699)        b=8.00  count=16000     p=2.0
+Total loss:     19268.068 (rec:601.712, round:18666.355)        b=7.25  count=16500     p=2.0
+Total loss:     17950.957 (rec:565.384, round:17385.572)        b=6.50  count=17000     p=2.0
+Total loss:     16574.221 (rec:609.866, round:15964.355)        b=5.75  count=17500     p=2.0
+Total loss:     14899.368 (rec:531.716, round:14367.652)        b=5.00  count=18000     p=2.0
+Total loss:     13133.495 (rec:582.903, round:12550.592)        b=4.25  count=18500     p=2.0
+Total loss:     11059.784 (rec:592.817, round:10466.967)        b=3.50  count=19000     p=2.0
+Total loss:     8796.817 (rec:710.565, round:8086.252)  b=2.75  count=19500     p=2.0
+Total loss:     6021.905 (rec:573.230, round:5448.675)  b=2.00  count=20000     p=2.0
+Reconstruction for layer conv_7
+Init alpha to be FP32
+Parameter containing:
+tensor(0.1762, device='cuda:0', requires_grad=True)
+Total loss:     872.575 (rec:872.575, round:0.000)      b=0.00  count=500       p=2.0
+Total loss:     718.211 (rec:718.211, round:0.000)      b=0.00  count=1000      p=2.0
+Total loss:     570.161 (rec:570.161, round:0.000)      b=0.00  count=1500      p=2.0
+Total loss:     637.635 (rec:637.635, round:0.000)      b=0.00  count=2000      p=2.0
+Total loss:     699.529 (rec:699.529, round:0.000)      b=0.00  count=2500      p=2.0
+Total loss:     657.923 (rec:657.923, round:0.000)      b=0.00  count=3000      p=2.0
+Total loss:     654.356 (rec:654.356, round:0.000)      b=0.00  count=3500      p=2.0
+Total loss:     10179.312 (rec:618.492, round:9560.820) b=26.00 count=4000      p=2.0
+Total loss:     8664.804 (rec:511.437, round:8153.367)  b=25.25 count=4500      p=2.0
+Total loss:     8394.005 (rec:549.529, round:7844.476)  b=24.50 count=5000      p=2.0
+Total loss:     8194.273 (rec:549.895, round:7644.378)  b=23.75 count=5500      p=2.0
+Total loss:     8061.899 (rec:576.983, round:7484.916)  b=23.00 count=6000      p=2.0
+Total loss:     7957.109 (rec:612.943, round:7344.167)  b=22.25 count=6500      p=2.0
+Total loss:     7780.070 (rec:567.005, round:7213.064)  b=21.50 count=7000      p=2.0
+Total loss:     7651.253 (rec:563.679, round:7087.574)  b=20.75 count=7500      p=2.0
+Total loss:     7543.992 (rec:576.996, round:6966.996)  b=20.00 count=8000      p=2.0
+Total loss:     7337.806 (rec:488.096, round:6849.710)  b=19.25 count=8500      p=2.0
+Total loss:     7378.677 (rec:647.219, round:6731.458)  b=18.50 count=9000      p=2.0
+Total loss:     7193.128 (rec:580.877, round:6612.251)  b=17.75 count=9500      p=2.0
+Total loss:     7086.832 (rec:593.269, round:6493.562)  b=17.00 count=10000     p=2.0
+Total loss:     7063.626 (rec:691.280, round:6372.346)  b=16.25 count=10500     p=2.0
+Total loss:     6918.397 (rec:667.181, round:6251.216)  b=15.50 count=11000     p=2.0
+Total loss:     6553.621 (rec:426.908, round:6126.713)  b=14.75 count=11500     p=2.0
+Total loss:     6569.833 (rec:570.766, round:5999.067)  b=14.00 count=12000     p=2.0
+Total loss:     6443.585 (rec:577.160, round:5866.425)  b=13.25 count=12500     p=2.0
+Total loss:     6174.848 (rec:445.542, round:5729.306)  b=12.50 count=13000     p=2.0
+Total loss:     6105.724 (rec:520.299, round:5585.425)  b=11.75 count=13500     p=2.0
+Total loss:     5949.950 (rec:516.737, round:5433.213)  b=11.00 count=14000     p=2.0
+Total loss:     5884.313 (rec:608.103, round:5276.211)  b=10.25 count=14500     p=2.0
+Total loss:     5607.573 (rec:499.886, round:5107.688)  b=9.50  count=15000     p=2.0
+Total loss:     5559.718 (rec:633.121, round:4926.597)  b=8.75  count=15500     p=2.0
+Total loss:     5279.605 (rec:547.986, round:4731.620)  b=8.00  count=16000     p=2.0
+Total loss:     5000.647 (rec:481.926, round:4518.721)  b=7.25  count=16500     p=2.0
+Total loss:     4862.737 (rec:579.140, round:4283.597)  b=6.50  count=17000     p=2.0
+Total loss:     4594.510 (rec:572.371, round:4022.139)  b=5.75  count=17500     p=2.0
+Total loss:     4254.831 (rec:527.141, round:3727.690)  b=5.00  count=18000     p=2.0
+Total loss:     3967.797 (rec:577.247, round:3390.551)  b=4.25  count=18500     p=2.0
+Total loss:     3487.279 (rec:490.423, round:2996.855)  b=3.50  count=19000     p=2.0
+Total loss:     3114.715 (rec:591.905, round:2522.810)  b=2.75  count=19500     p=2.0
+Total loss:     2486.492 (rec:556.282, round:1930.210)  b=2.00  count=20000     p=2.0
+02/16 02:40:25 PM | Test Loss 36.8527   Top1 0.00%      Top5 0.00%      Time 16.30s
+
+Weight quantization accuracy: (tensor([0.], device='cuda:0'), tensor([0.], device='cuda:0'))
+Traceback (most recent call last):
+  File "04-brecq_ristretto.py", line 331, in <module>
+    main()
+  File "04-brecq_ristretto.py", line 291, in main
+    weight, bias, input_fl, output_fl, eltwise = get_fl(qnn)
+  File "04-brecq_ristretto.py", line 213, in get_fl
+    get_fl(module, weight, bias, input_fl, output_fl)
+  File "04-brecq_ristretto.py", line 213, in get_fl
+    get_fl(module, weight, bias, input_fl, output_fl)
+  File "04-brecq_ristretto.py", line 213, in get_fl
+    get_fl(module, weight, bias, input_fl, output_fl)
+  [Previous line repeated 1 more time]
+  File "04-brecq_ristretto.py", line 204, in get_fl
+    output_fl.append(7 - torch.round(torch.log2(module.out_act_quantizer.s_max)).item())
+TypeError: log2(): argument 'input' (position 1) must be Tensor, not NoneType
+04-brecq_ristretto.sh: 18: --baseline_model: not found
+04-brecq_ristretto.sh: 21: --eval_batch_size: not found
+04-brecq_ristretto.sh: 27: --gpus: not found

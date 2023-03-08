@@ -32,6 +32,14 @@ parser.add_argument('--act_quant', action='store_true', help='apply activation q
 parser.add_argument('--pruning', action='store_true', help='apply pruning weights')
 parser.add_argument('--disable_8bit_head_stem', action='store_true')
 parser.add_argument('--test_before_calibration', action='store_true')
+parser.add_argument(
+    '--baseline_model',
+    type=str,
+    default='./baseline/imagenet/resnet18.pth',
+    # default='./baseline/imagenet/darknet19.pth',
+    # default='./baseline/imagenet/regnet_y_400.pth',
+    help='Path to the model wait for test. default:None'
+)
 
 # weight calibration parameters
 parser.add_argument('--num_samples', default=1000, type=int, help='size of the calibration dataset')
@@ -201,7 +209,8 @@ def main():
                 weight.append(7 - torch.round(torch.log2(module.weight_quantizer.s_max)).item())
                 if module.in_act_quantizer.s_max is not None:
                     input_fl.append(7 - torch.round(torch.log2(module.in_act_quantizer.s_max)).item())
-                output_fl.append(7 - torch.round(torch.log2(module.out_act_quantizer.s_max)).item())
+                if module.out_act_quantizer.s_max is not None:
+                    output_fl.append(7 - torch.round(torch.log2(module.out_act_quantizer.s_max)).item())
                 if module.bias is not None:
                     bias.append(7 - torch.round(torch.log2(module.bias_quantizer.s_max)).item())
             elif isinstance(module, BaseQuantBlock):
@@ -321,7 +330,7 @@ def main():
         'bias_fl': bias,
         'a_fl' : a_fl,
     }
-    checkpoint.save_model(state, True)
+    checkpoint.save_model(state, is_best=True)
     logger.info('Quantization Top-1 accuracy: {:.3f} Top-5 accuracy: {:.3}'.format(float(top1_acc), float(top5_acc)))
 
 

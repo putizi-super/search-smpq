@@ -1,0 +1,263 @@
+QuantModel(
+  (model): DarkNet_19(
+    (conv_1): Sequential(
+      (0): Conv_BN_LeakyReLU(
+        (convs): Sequential(
+          (0): QuantModule(
+            (weight_quantizer): RistrettoQuantizer(bit=4, scale_method=mse, symmetric=False, channel_wise=False, leaf_param=True)
+            (bias_quantizer): RistrettoQuantizer(bit=4, scale_method=mse, symmetric=False, channel_wise=False, leaf_param=True)
+            (in_act_quantizer): RistrettoQuantizer(bit=8, scale_method=mse, symmetric=False, channel_wise=False, leaf_param=False)
+            (out_act_quantizer): RistrettoQuantizer(bit=8, scale_method=mse, symmetric=False, channel_wise=False, leaf_param=False)
+            (activation_function): LeakyReLU(negative_slope=0.1, inplace=True)
+          )
+          (1): StraightThrough()
+          (2): StraightThrough()
+        )
+      )
+      (1): MaxPool2d(kernel_size=(2, 2), stride=2, padding=0, dilation=1, ceil_mode=False)
+    )
+    (conv_2): Sequential(
+      (0): Conv_BN_LeakyReLU(
+        (convs): Sequential(
+          (0): QuantModule(
+            (weight_quantizer): RistrettoQuantizer(bit=4, scale_method=mse, symmetric=False, channel_wise=False, leaf_param=True)
+            (bias_quantizer): RistrettoQuantizer(bit=4, scale_method=mse, symmetric=False, channel_wise=False, leaf_param=True)
+            (in_act_quantizer): RistrettoQuantizer(bit=8, scale_method=mse, symmetric=False, channel_wise=False, leaf_param=False)
+            (out_act_quantizer): RistrettoQuantizer(bit=8, scale_method=mse, symmetric=False, channel_wise=False, leaf_param=False)
+            (activation_function): LeakyReLU(negative_slope=0.1, inplace=True)
+          )
+          (1): StraightThrough()
+          (2): StraightThrough()
+        )
+      )
+      (1): MaxPool2d(kernel_size=(2, 2), stride=2, padding=0, dilation=1, ceil_mode=False)
+    )
+    (conv_3): Sequential(
+      (0): Conv_BN_LeakyReLU(
+        (convs): Sequential(
+          (0): QuantModule(
+            (weight_quantizer): RistrettoQuantizer(bit=4, scale_method=mse, symmetric=False, channel_wise=False, leaf_param=True)
+            (bias_quantizer): RistrettoQuantizer(bit=4, scale_method=mse, symmetric=False, channel_wise=False, leaf_param=True)
+            (in_act_quantizer): RistrettoQuantizer(bit=8, scale_method=mse, symmetric=False, channel_wise=False, leaf_param=False)
+            (out_act_quantizer): RistrettoQuantizer(bit=8, scale_method=mse, symmetric=False, channel_wise=False, leaf_param=False)
+            (activation_function): LeakyReLU(negative_slope=0.1, inplace=True)
+          )
+          (1): StraightThrough()
+          (2): StraightThrough()
+        )
+      )
+      (1): Conv_BN_LeakyReLU(
+        (convs): Sequential(
+          (0): QuantModule(
+            (weight_quantizer): RistrettoQuantizer(bit=4, scale_method=mse, symmetric=False, channel_wise=False, leaf_param=True)
+            (bias_quantizer): RistrettoQuantizer(bit=4, scale_method=mse, symmetric=False, channel_wise=False, leaf_param=True)
+            (in_act_quantizer): RistrettoQuantizer(bit=8, scale_method=mse, symmetric=False, channel_wise=False, leaf_param=False)
+            (out_act_quantizer): RistrettoQuantizer(bit=8, scale_method=mse, symmetric=False, channel_wise=False, leaf_param=False)
+            (activation_function): LeakyReLU(negative_slope=0.1, inplace=True)
+          )
+          (1): StraightThrough()
+          (2): StraightThrough()
+        )
+      )
+      (2): Conv_BN_LeakyReLU(
+        (convs): Sequential(
+          (0): QuantModule(
+            (weight_quantizer): RistrettoQuantizer(bit=4, scale_method=mse, symmetric=False, channel_wise=False, leaf_param=True)
+            (bias_quantizer): RistrettoQuantizer(bit=4, scale_method=mse, symmetric=False, channel_wise=False, leaf_param=True)
+            (in_act_quantizer): RistrettoQuantizer(bit=8, scale_method=mse, symmetric=False, channel_wise=False, leaf_param=False)
+            (out_act_quantizer): RistrettoQuantizer(bit=8, scale_method=mse, symmetric=False, channel_wise=False, leaf_param=False)
+            (activation_function): LeakyReLU(negative_slope=0.1, inplace=True)
+          )
+          (1): StraightThrough()
+          (2): StraightThrough()
+        )
+      )
+      (3): MaxPool2d(kernel_size=(2, 2), stride=2, padding=0, dilation=1, ceil_mode=False)
+    )
+    (conv_4): Sequential(
+      (0): Conv_BN_LeakyReLU(
+        (convs): Sequential(
+          (0): QuantModule(
+            (weight_quantizer): RistrettoQuantizer(bit=4, scale_method=mse, symmetric=False, channel_wise=False, leaf_param=True)
+            (bias_quantizer): RistrettoQuantizer(bit=4, scale_method=mse, symmetric=False, channel_wise=False, leaf_param=True)
+            (in_act_quantizer): RistrettoQuantizer(bit=8, scale_method=mse, symmetric=False, channel_wise=False, leaf_param=False)
+            (out_act_quantizer): RistrettoQuantizer(bit=8, scale_method=mse, symmetric=False, channel_wise=False, leaf_param=False)
+            (activation_function): LeakyReLU(negative_slope=0.1, inplace=True)
+          )
+          (1): StraightThrough()
+          (2): StraightThrough()
+        )
+      )
+      (1): Conv_BN_LeakyReLU(
+        (convs): Sequential(
+          (0): QuantModule(
+            (weight_quantizer): RistrettoQuantizer(bit=4, scale_method=mse, symmetric=False, channel_wise=False, leaf_param=True)
+            (bias_quantizer): RistrettoQuantizer(bit=4, scale_method=mse, symmetric=False, channel_wise=False, leaf_param=True)
+            (in_act_quantizer): RistrettoQuantizer(bit=8, scale_method=mse, symmetric=False, channel_wise=False, leaf_param=False)
+            (out_act_quantizer): RistrettoQuantizer(bit=8, scale_method=mse, symmetric=False, channel_wise=False, leaf_param=False)
+            (activation_function): LeakyReLU(negative_slope=0.1, inplace=True)
+          )
+          (1): StraightThrough()
+          (2): StraightThrough()
+        )
+      )
+      (2): Conv_BN_LeakyReLU(
+        (convs): Sequential(
+          (0): QuantModule(
+            (weight_quantizer): RistrettoQuantizer(bit=4, scale_method=mse, symmetric=False, channel_wise=False, leaf_param=True)
+            (bias_quantizer): RistrettoQuantizer(bit=4, scale_method=mse, symmetric=False, channel_wise=False, leaf_param=True)
+            (in_act_quantizer): RistrettoQuantizer(bit=8, scale_method=mse, symmetric=False, channel_wise=False, leaf_param=False)
+            (out_act_quantizer): RistrettoQuantizer(bit=8, scale_method=mse, symmetric=False, channel_wise=False, leaf_param=False)
+            (activation_function): LeakyReLU(negative_slope=0.1, inplace=True)
+          )
+          (1): StraightThrough()
+          (2): StraightThrough()
+        )
+      )
+    )
+    (maxpool_4): MaxPool2d(kernel_size=(2, 2), stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv_5): Sequential(
+      (0): Conv_BN_LeakyReLU(
+        (convs): Sequential(
+          (0): QuantModule(
+            (weight_quantizer): RistrettoQuantizer(bit=4, scale_method=mse, symmetric=False, channel_wise=False, leaf_param=True)
+            (bias_quantizer): RistrettoQuantizer(bit=4, scale_method=mse, symmetric=False, channel_wise=False, leaf_param=True)
+            (in_act_quantizer): RistrettoQuantizer(bit=8, scale_method=mse, symmetric=False, channel_wise=False, leaf_param=False)
+            (out_act_quantizer): RistrettoQuantizer(bit=8, scale_method=mse, symmetric=False, channel_wise=False, leaf_param=False)
+            (activation_function): LeakyReLU(negative_slope=0.1, inplace=True)
+          )
+          (1): StraightThrough()
+          (2): StraightThrough()
+        )
+      )
+      (1): Conv_BN_LeakyReLU(
+        (convs): Sequential(
+          (0): QuantModule(
+            (weight_quantizer): RistrettoQuantizer(bit=4, scale_method=mse, symmetric=False, channel_wise=False, leaf_param=True)
+            (bias_quantizer): RistrettoQuantizer(bit=4, scale_method=mse, symmetric=False, channel_wise=False, leaf_param=True)
+            (in_act_quantizer): RistrettoQuantizer(bit=8, scale_method=mse, symmetric=False, channel_wise=False, leaf_param=False)
+            (out_act_quantizer): RistrettoQuantizer(bit=8, scale_method=mse, symmetric=False, channel_wise=False, leaf_param=False)
+            (activation_function): LeakyReLU(negative_slope=0.1, inplace=True)
+          )
+          (1): StraightThrough()
+          (2): StraightThrough()
+        )
+      )
+      (2): Conv_BN_LeakyReLU(
+        (convs): Sequential(
+          (0): QuantModule(
+            (weight_quantizer): RistrettoQuantizer(bit=4, scale_method=mse, symmetric=False, channel_wise=False, leaf_param=True)
+            (bias_quantizer): RistrettoQuantizer(bit=4, scale_method=mse, symmetric=False, channel_wise=False, leaf_param=True)
+            (in_act_quantizer): RistrettoQuantizer(bit=8, scale_method=mse, symmetric=False, channel_wise=False, leaf_param=False)
+            (out_act_quantizer): RistrettoQuantizer(bit=8, scale_method=mse, symmetric=False, channel_wise=False, leaf_param=False)
+            (activation_function): LeakyReLU(negative_slope=0.1, inplace=True)
+          )
+          (1): StraightThrough()
+          (2): StraightThrough()
+        )
+      )
+      (3): Conv_BN_LeakyReLU(
+        (convs): Sequential(
+          (0): QuantModule(
+            (weight_quantizer): RistrettoQuantizer(bit=4, scale_method=mse, symmetric=False, channel_wise=False, leaf_param=True)
+            (bias_quantizer): RistrettoQuantizer(bit=4, scale_method=mse, symmetric=False, channel_wise=False, leaf_param=True)
+            (in_act_quantizer): RistrettoQuantizer(bit=8, scale_method=mse, symmetric=False, channel_wise=False, leaf_param=False)
+            (out_act_quantizer): RistrettoQuantizer(bit=8, scale_method=mse, symmetric=False, channel_wise=False, leaf_param=False)
+            (activation_function): LeakyReLU(negative_slope=0.1, inplace=True)
+          )
+          (1): StraightThrough()
+          (2): StraightThrough()
+        )
+      )
+      (4): Conv_BN_LeakyReLU(
+        (convs): Sequential(
+          (0): QuantModule(
+            (weight_quantizer): RistrettoQuantizer(bit=4, scale_method=mse, symmetric=False, channel_wise=False, leaf_param=True)
+            (bias_quantizer): RistrettoQuantizer(bit=4, scale_method=mse, symmetric=False, channel_wise=False, leaf_param=True)
+            (in_act_quantizer): RistrettoQuantizer(bit=8, scale_method=mse, symmetric=False, channel_wise=False, leaf_param=False)
+            (out_act_quantizer): RistrettoQuantizer(bit=8, scale_method=mse, symmetric=False, channel_wise=False, leaf_param=False)
+            (activation_function): LeakyReLU(negative_slope=0.1, inplace=True)
+          )
+          (1): StraightThrough()
+          (2): StraightThrough()
+        )
+      )
+    )
+    (maxpool_5): MaxPool2d(kernel_size=(2, 2), stride=2, padding=0, dilation=1, ceil_mode=False)
+    (conv_6): Sequential(
+      (0): Conv_BN_LeakyReLU(
+        (convs): Sequential(
+          (0): QuantModule(
+            (weight_quantizer): RistrettoQuantizer(bit=4, scale_method=mse, symmetric=False, channel_wise=False, leaf_param=True)
+            (bias_quantizer): RistrettoQuantizer(bit=4, scale_method=mse, symmetric=False, channel_wise=False, leaf_param=True)
+            (in_act_quantizer): RistrettoQuantizer(bit=8, scale_method=mse, symmetric=False, channel_wise=False, leaf_param=False)
+            (out_act_quantizer): RistrettoQuantizer(bit=8, scale_method=mse, symmetric=False, channel_wise=False, leaf_param=False)
+            (activation_function): LeakyReLU(negative_slope=0.1, inplace=True)
+          )
+          (1): StraightThrough()
+          (2): StraightThrough()
+        )
+      )
+      (1): Conv_BN_LeakyReLU(
+        (convs): Sequential(
+          (0): QuantModule(
+            (weight_quantizer): RistrettoQuantizer(bit=4, scale_method=mse, symmetric=False, channel_wise=False, leaf_param=True)
+            (bias_quantizer): RistrettoQuantizer(bit=4, scale_method=mse, symmetric=False, channel_wise=False, leaf_param=True)
+            (in_act_quantizer): RistrettoQuantizer(bit=8, scale_method=mse, symmetric=False, channel_wise=False, leaf_param=False)
+            (out_act_quantizer): RistrettoQuantizer(bit=8, scale_method=mse, symmetric=False, channel_wise=False, leaf_param=False)
+            (activation_function): LeakyReLU(negative_slope=0.1, inplace=True)
+          )
+          (1): StraightThrough()
+          (2): StraightThrough()
+        )
+      )
+      (2): Conv_BN_LeakyReLU(
+        (convs): Sequential(
+          (0): QuantModule(
+            (weight_quantizer): RistrettoQuantizer(bit=4, scale_method=mse, symmetric=False, channel_wise=False, leaf_param=True)
+            (bias_quantizer): RistrettoQuantizer(bit=4, scale_method=mse, symmetric=False, channel_wise=False, leaf_param=True)
+            (in_act_quantizer): RistrettoQuantizer(bit=8, scale_method=mse, symmetric=False, channel_wise=False, leaf_param=False)
+            (out_act_quantizer): RistrettoQuantizer(bit=8, scale_method=mse, symmetric=False, channel_wise=False, leaf_param=False)
+            (activation_function): LeakyReLU(negative_slope=0.1, inplace=True)
+          )
+          (1): StraightThrough()
+          (2): StraightThrough()
+        )
+      )
+      (3): Conv_BN_LeakyReLU(
+        (convs): Sequential(
+          (0): QuantModule(
+            (weight_quantizer): RistrettoQuantizer(bit=4, scale_method=mse, symmetric=False, channel_wise=False, leaf_param=True)
+            (bias_quantizer): RistrettoQuantizer(bit=4, scale_method=mse, symmetric=False, channel_wise=False, leaf_param=True)
+            (in_act_quantizer): RistrettoQuantizer(bit=8, scale_method=mse, symmetric=False, channel_wise=False, leaf_param=False)
+            (out_act_quantizer): RistrettoQuantizer(bit=8, scale_method=mse, symmetric=False, channel_wise=False, leaf_param=False)
+            (activation_function): LeakyReLU(negative_slope=0.1, inplace=True)
+          )
+          (1): StraightThrough()
+          (2): StraightThrough()
+        )
+      )
+      (4): Conv_BN_LeakyReLU(
+        (convs): Sequential(
+          (0): QuantModule(
+            (weight_quantizer): RistrettoQuantizer(bit=4, scale_method=mse, symmetric=False, channel_wise=False, leaf_param=True)
+            (bias_quantizer): RistrettoQuantizer(bit=4, scale_method=mse, symmetric=False, channel_wise=False, leaf_param=True)
+            (in_act_quantizer): RistrettoQuantizer(bit=8, scale_method=mse, symmetric=False, channel_wise=False, leaf_param=False)
+            (out_act_quantizer): RistrettoQuantizer(bit=8, scale_method=mse, symmetric=False, channel_wise=False, leaf_param=False)
+            (activation_function): LeakyReLU(negative_slope=0.1, inplace=True)
+          )
+          (1): StraightThrough()
+          (2): StraightThrough()
+        )
+      )
+    )
+    (conv_7): QuantModule(
+      (weight_quantizer): RistrettoQuantizer(bit=4, scale_method=mse, symmetric=False, channel_wise=False, leaf_param=True)
+      (bias_quantizer): RistrettoQuantizer(bit=4, scale_method=mse, symmetric=False, channel_wise=False, leaf_param=True)
+      (in_act_quantizer): RistrettoQuantizer(bit=8, scale_method=mse, symmetric=False, channel_wise=False, leaf_param=False)
+      (out_act_quantizer): RistrettoQuantizer(bit=8, scale_method=mse, symmetric=False, channel_wise=False, leaf_param=False)
+      (activation_function): StraightThrough()
+    )
+    (avgpool): AdaptiveAvgPool2d(output_size=(1, 1))
+  )
+)

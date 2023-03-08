@@ -20,7 +20,7 @@ class QuantModel(nn.Module):
         """
         prev_quantmodule = None
         for name, child_module in module.named_children():
-        #   把各残差块对象转化为有着量化参数的残差块对象
+        #   把各残差块对象转化为有着量化参数的残差块对象 setattr（）设置属性函数
             if (type(child_module)) in specials:
                 setattr(module, name, specials[type(child_module)](child_module, weight_quant_params, bias_quant_params, act_quant_params))
         #   把各层转化为QuantModel类型
