@@ -2,3 +2,13 @@
 *.swp 
 .DS_Store
 /experiment
+baseline/imagenet/regnet_y_400.pth
+*.pth
+*.pt
+*.pt
+*.pt
+*.pt
+*.pt
+*.pt
+*.pt
+*.pt
